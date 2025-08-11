@@ -3,12 +3,13 @@
 
 .container-1
   position: relative
-  height: 100dvh
+  height: 100vh
 
   .slider
     height: 100%
     display: flex
     overflow-x: auto
+    overflow-y: hidden 
     scroll-snap-type: x mandatory
     scroll-behavior: smooth
     scrollbar-width: none // Firefox
@@ -22,7 +23,7 @@
       content: ""
       position: absolute
       inset: 0
-      background: $secondary
+      background: $black
       opacity: .5
       z-index: 1
       pointer-events: none
@@ -34,14 +35,14 @@
       background-size: cover              // Ensures full coverage, cropping if needed
       background-position: center         // Keeps image centered
       background-repeat: no-repeat        // Prevents tiling
-      width: 100vw
-      height: 100vh
+      width: 100%
+      height: 100%
       scroll-snap-align: start            // Only relevant in scroll containers
 
       img
         aspect-ratio: 16 / 9
-        width: 100vw
-        height: 100vh
+        width: 100%
+        height: 100%
         scroll-snap-align: start
         object-fit: cover
 
@@ -61,9 +62,9 @@
           padding: 0 10px 5px 10px
           a
             text-decoration: none
-            color: $primary
+            color: $white
             &:hover
-              color: adjust-color($primary, $lightness: -25%)
+              color: adjust-color($white, $lightness: -25%)
 
         p
           font-size: clamp(0.75rem, 3vw, 1.25rem)
@@ -82,7 +83,7 @@
     top: 50%
     transform: translateY(-50%)
     background-color: rgba(0, 0, 0, 0)
-    color: $primary
+    color: $white
     border: none
     font-size: 3rem
     cursor: pointer
@@ -91,12 +92,12 @@
     &.left-arrow
       left: 1vw
     &.left-arrow:hover
-      color: adjust-color($primary, $lightness: -25%)
+      color: adjust-color($white, $lightness: -25%)
 
     &.right-arrow
       right: 1vw
     &.right-arrow:hover
-      color: adjust-color($primary, $lightness: -25%)
+      color: adjust-color($white, $lightness: -25%)
     
   .int-arrows-body
     bottom: 1em // places it at the top of the container
@@ -113,12 +114,12 @@
         position: relative
         width: 1.5em
         height: 1.5em
-        border-top: 0.5em solid $primary
-        border-left: 0.5em solid $primary
+        border-top: 0.5em solid $white
+        border-left: 0.5em solid $white
         transform: rotate(-135deg)
         animation: arrow-load 2s infinite
     .int-arrow:hover
-      color: adjust-color($primary, $lightness: -25%)
+      color: adjust-color($white, $lightness: -25%)
     .int-arrow:nth-child(1)
         animation-delay: -0.2s
     .int-arrow:nth-child(2)
@@ -137,17 +138,18 @@
   position: relative
   height: 100dvh
   overflow: hidden 
+  background: $secondary
   .header
     margin-top: 18vh
     position: relative
-    color: $secondary
+    color: $primary
     text-align: center
     @media screen and (max-width: 600px)
       margin-top: 12vh
   .scroller[data-animated="true"] 
     overflow: hidden
-    -webkit-mask: linear-gradient(90deg,transparent,$primary 20%,$primary 80%,transparent)
-    mask: linear-gradient(90deg, transparent, $primary 20%, $primary 80%, transparent)
+    -webkit-mask: linear-gradient(90deg,transparent,$secondary 20%,$secondary  80%,transparent)
+    mask: linear-gradient(90deg, transparent, $secondary  20%, $secondary  80%, transparent)
     .publications-content-wrapper
       width: max-content
       flex-wrap: nowrap
@@ -199,10 +201,10 @@
 
       &::before
         left: 0
-        background: linear-gradient(to right, white 0%, transparent 100%)
+        background: linear-gradient(to right, $secondary 0%, transparent 100%)
       &::after 
         right: 0
-        background: linear-gradient(to left, white 0%, transparent 100%)
+        background: linear-gradient(to left, $secondary 0%, transparent 100%)
       .content-box
         position: relative
         padding: 30px 20px 10px 20px
@@ -210,10 +212,11 @@
         flex-direction: column
         width: 350px
         height: 60vh
-        border: 1px solid rgba(0,0,0,0.1)
+        border: 1px solid rgba(255, 255, 255, 0.1)
         border-radius: 8px
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2)
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2)
         overflow: hidden
+        background-color: $primary
         .content-box-text
           display: flex
           flex-direction: column
@@ -234,7 +237,7 @@
             padding-bottom: 20px
           p
             padding-top: 20px
-            color: lighten($secondary, 40%)
+            color: darken($primary, 40%)
             line-height: 1.2em
             white-space: normal
             word-break: break-word

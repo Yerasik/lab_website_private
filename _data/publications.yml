@@ -2,7 +2,7 @@
 #when you change a slide change the data in the assets/img/publications folder
 - image: assets/img/publications/publication1.jpg
   title: Title 1
-  abstract: Abstarct.Abstarct.Abstarct.Ab
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-1"
   number: "1"
   tags: ["tag1tag2", "tag2"]
