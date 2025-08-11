@@ -1,15 +1,16 @@
 .container-team
   padding: 5vh
   overflow: hidden
+  background: $secondary
   .header
     margin-top: 18vh
-    color: $secondary
+    color: $primary
     text-align: center
     @media screen and (max-width: 600px)
       margin-top: 12vh
   .title
     h1  
-      color: $secondary
+      color: $primary
       text-align: left
       margin: 4vh 2vh 2vh 2vh
     hr  
@@ -28,10 +29,11 @@
       flex-direction: column
       width: 350px
       height: 50vh
-      border: 1px solid rgba(0,0,0,0.1)
+      border: 1px solid rgba($primary, 0.1)
       border-radius: 8px
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2)
+      box-shadow: 0 4px 12px rgba($primary, 0.2)
       overflow: hidden
+      background: $white
       .content-box-text
         display: flex
         flex-direction: column
@@ -44,14 +46,14 @@
             width: 100%
             display: block
         h1
-          color: $secondary
+          color: $black
           margin: 0
           text-align: left
           line-height: 1.2em
           padding-bottom: 20px
         p
           padding-top: 20px
-          color: lighten($secondary, 40%)
+          color: lighten($black, 40%)
           line-height: 1.2em
           white-space: normal
           word-break: break-word
@@ -67,7 +69,7 @@
         z-index: 2
         width: 310px
         height: 100px
-        background: linear-gradient(to top, $primary 0%, transparent 100%)
+        background: linear-gradient(to top, $white 0%, transparent 100%)
         
       .email
         position: absolute
@@ -77,9 +79,9 @@
         text-align: right
           
         a
-          color: $secondary
+          color: $black
           font-weight: 500
           text-decoration: none
           &:hover
-            color: adjust-color($secondary, $lightness: 25%)
+            color: adjust-color($black, $lightness: 25%)
         

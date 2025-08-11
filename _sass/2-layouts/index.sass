@@ -212,11 +212,11 @@
         flex-direction: column
         width: 350px
         height: 60vh
-        border: 1px solid rgba(255, 255, 255, 0.1)
+        border: 1px solid rgba($primary, 0.1)
         border-radius: 8px
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2)
+        box-shadow: 0 4px 12px rgba($primary, 0.2)
         overflow: hidden
-        background-color: $primary
+        background-color: $white
         .content-box-text
           display: flex
           flex-direction: column
@@ -230,14 +230,14 @@
               width: 100%
               display: block
           h1
-            color: $secondary
+            color: $black
             margin: 0
             text-align: left
             line-height: 1.2em
             padding-bottom: 20px
           p
             padding-top: 20px
-            color: darken($primary, 40%)
+            color: darken($black, 40%)
             line-height: 1.2em
             white-space: normal
             word-break: break-word
@@ -253,7 +253,7 @@
           z-index: 2
           width: 310px
           height: 100px
-          background: linear-gradient(to top, $primary 0%, transparent 100%)
+          background: linear-gradient(to top, $white 0%, transparent 100%)
         
         .read-more
           position: absolute
@@ -263,11 +263,11 @@
           text-align: right
           
           a
-            color: $secondary
+            color: $black
             font-weight: 500
             text-decoration: none
             &:hover
-              color: adjust-color($secondary, $lightness: 25%)
+              color: adjust-color($black, $lightness: 25%)
         
 
 

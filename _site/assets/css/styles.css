@@ -371,7 +371,7 @@ nav.nav-wrap ul.navigation li:last-of-type {
   z-index: 999;
 }
 .nav-toggle-open-wrapper svg {
-  stroke: rgb(0, 0, 0);
+  stroke: rgb(255, 255, 255);
 }
 
 .nav-toggle-open-wrapper.toggle-dark svg {
@@ -805,7 +805,7 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFFFFF;
 }
 .container-2 .scroller .publications-content-wrapper .content-box .content-box-text {
   display: flex;
@@ -822,7 +822,7 @@ html.nav-open .toggled-nav-wrapper {
   display: block;
 }
 .container-2 .scroller .publications-content-wrapper .content-box .content-box-text h1 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin: 0;
   text-align: left;
   line-height: 1.2em;
@@ -830,7 +830,7 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-2 .scroller .publications-content-wrapper .content-box .content-box-text p {
   padding-top: 20px;
-  color: #999999;
+  color: black;
   line-height: 1.2em;
   white-space: normal;
   word-break: break-word;
@@ -846,7 +846,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 100%);
+  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
 }
 .container-2 .scroller .publications-content-wrapper .content-box .read-more {
   position: absolute;
@@ -856,7 +856,7 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
 }
 .container-2 .scroller .publications-content-wrapper .content-box .read-more a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-weight: 500;
   text-decoration: none;
 }
@@ -872,10 +872,11 @@ html.nav-open .toggled-nav-wrapper {
 .container-team {
   padding: 5vh;
   overflow: hidden;
+  background: rgb(0, 0, 0);
 }
 .container-team .header {
   margin-top: 18vh;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -884,7 +885,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-team .title h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: left;
   margin: 4vh 2vh 2vh 2vh;
 }
@@ -909,10 +910,11 @@ html.nav-open .toggled-nav-wrapper {
   flex-direction: column;
   width: 350px;
   height: 50vh;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
+  background: #FFFFFF;
 }
 .container-team .member-content-wrapper .content-box .content-box-text {
   display: flex;
@@ -928,7 +930,7 @@ html.nav-open .toggled-nav-wrapper {
   display: block;
 }
 .container-team .member-content-wrapper .content-box .content-box-text h1 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin: 0;
   text-align: left;
   line-height: 1.2em;
@@ -952,7 +954,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 100%);
+  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
 }
 .container-team .member-content-wrapper .content-box .email {
   position: absolute;
@@ -962,7 +964,7 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
 }
 .container-team .member-content-wrapper .content-box .email a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-weight: 500;
   text-decoration: none;
 }
