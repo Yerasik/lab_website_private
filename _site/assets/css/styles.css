@@ -1248,6 +1248,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-news {
   padding: 5vh;
   overflow: hidden;
+  background: rgb(0, 0, 0);
 }
 .container-news .header-wrapper {
   width: 30vw;
@@ -1257,7 +1258,7 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-news .header-wrapper .header {
   margin-top: 18vh;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 12vh;
 }
@@ -1278,6 +1279,7 @@ html.nav-open .toggled-nav-wrapper {
   height: 50vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  background: #FFFFFF;
 }
 .container-news .news-content-wrapper .news-box .news-box-text {
   display: flex;
@@ -1293,7 +1295,7 @@ html.nav-open .toggled-nav-wrapper {
   display: block;
 }
 .container-news .news-content-wrapper .news-box .news-box-text h1 {
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin: 0;
   text-align: left;
   line-height: 1.2em;
@@ -1317,7 +1319,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 100%);
+  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
 }
 .container-news .news-content-wrapper .news-box .email {
   position: absolute;
@@ -1327,7 +1329,7 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
 }
 .container-news .news-content-wrapper .news-box .email a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-weight: 500;
   text-decoration: none;
 }
