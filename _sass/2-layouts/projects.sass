@@ -1,6 +1,7 @@
 .container-projects
   position: relative
   padding: 5vh
+  background: $secondary
   .header-and-search
     display: flex
     flex-direction: row
@@ -11,7 +12,7 @@
       flex-direction: column
     .header-projects
       width: 70%
-      color: $secondary
+      color: $primary
       text-align: left
       @media screen and (max-width: 600px)
         width: 100%
@@ -39,7 +40,7 @@
     padding: 2vh
     width: 100%
     p
-      color: $secondary
+      color: $primary
       overflow-wrap: break-word
       display: -webkit-box
       -webkit-line-clamp: 5
@@ -57,9 +58,10 @@
       height: 20vh
       display: flex
       flex-direction: row
-      border: 1px solid lighten($secondary, 80%)
+      border: 1px solid darken($primary, 80%)
       border-radius: 1vh
       overflow: hidden
+      background: $white
       img
         object-fit: cover
         width: 20%
@@ -74,11 +76,11 @@
         height: 16vh
         a
           h1  
-            color: #551A8B
+            color: $highliting
             font-size: clamp(1rem, 3vw, 1.5rem)
             font-weight: 600
         p
-          color: $secondary
+          color: $black
           font-size: clamp(0.6rem, 2vw, 1rem)
         p.tag
           position: absolute

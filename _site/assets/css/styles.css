@@ -975,11 +975,12 @@ html.nav-open .toggled-nav-wrapper {
 .container-publications {
   position: relative;
   padding: 5vh;
+  background: rgb(0, 0, 0);
 }
 .container-publications .header {
   margin-top: 18vh;
   margin-bottom: 2vh;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -1031,16 +1032,16 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-publications .publications-content-wrapper .publication-wrapper .number-and-url h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .container-publications .publications-content-wrapper .publication-wrapper .number-and-url a {
   font-size: clamp(0.75rem, 2vw, 1rem);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 500;
   text-decoration: none;
 }
 .container-publications .publications-content-wrapper .publication-wrapper .number-and-url a:hover {
-  color: rgb(63.75, 63.75, 63.75);
+  color: rgb(191.25, 191.25, 191.25);
 }
 .container-publications .publications-content-wrapper .publication-wrapper .number-and-url .tag-wrapper {
   position: absolute;
@@ -1052,9 +1053,9 @@ html.nav-open .toggled-nav-wrapper {
 .container-publications .publications-content-wrapper .publication-wrapper .number-and-url .tag-wrapper .tag p {
   display: inline-block;
   padding: 0.3vh 0.7vw;
-  border: 1px solid #666666;
+  border: 1px solid #999999;
   border-radius: clamp(2px, 2vh, 6px);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: clamp(0.5rem, 2vw, 0.85rem);
   white-space: nowrap;
   margin: 0;
@@ -1073,11 +1074,11 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-publications .publications-content-wrapper .publication-wrapper .information h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .container-publications .publications-content-wrapper .publication-wrapper .information p {
   font-size: clamp(0.75rem, 2vw, 1rem);
-  color: #666666;
+  color: white;
   line-height: 1.2em;
 }
 .container-publications .publications-content-wrapper .publication-wrapper .information p.journal {
@@ -1094,6 +1095,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-projects {
   position: relative;
   padding: 5vh;
+  background: rgb(0, 0, 0);
 }
 .container-projects .header-and-search {
   display: flex;
@@ -1109,7 +1111,7 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-projects .header-and-search .header-projects {
   width: 70%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: left;
 }
 @media screen and (max-width: 600px) {
@@ -1148,7 +1150,7 @@ html.nav-open .toggled-nav-wrapper {
   width: 100%;
 }
 .container-projects .projects-oveview p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   overflow-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -1168,9 +1170,10 @@ html.nav-open .toggled-nav-wrapper {
   height: 20vh;
   display: flex;
   flex-direction: row;
-  border: 1px solid #cccccc;
+  border: 1px solid #333333;
   border-radius: 1vh;
   overflow: hidden;
+  background: #FFFFFF;
 }
 .container-projects .projects-wrapper .projects-block img {
   object-fit: cover;
@@ -1187,12 +1190,12 @@ html.nav-open .toggled-nav-wrapper {
   height: 16vh;
 }
 .container-projects .projects-wrapper .projects-block .text a h1 {
-  color: #551A8B;
+  color: #517AF4;
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
 }
 .container-projects .projects-wrapper .projects-block .text p {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: clamp(0.6rem, 2vw, 1rem);
 }
 .container-projects .projects-wrapper .projects-block .text p.tag {
