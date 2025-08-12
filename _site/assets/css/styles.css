@@ -1337,6 +1337,9 @@ html.nav-open .toggled-nav-wrapper {
   color: rgb(63.75, 63.75, 63.75);
 }
 
+.container-contact-us {
+  background: rgb(0, 0, 0);
+}
 .container-contact-us .contact-us-header-wrapper {
   position: relative;
   height: 60vh;
@@ -1361,7 +1364,7 @@ html.nav-open .toggled-nav-wrapper {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgb(0, 0, 0);
+  background: #000000;
   opacity: 0.5;
   z-index: 1;
   pointer-events: none;
@@ -1419,7 +1422,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-contact-us .form-and-links .links-holder h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+  color: #FFFFFF;
   flex-shrink: 0;
 }
 .container-contact-us .form-and-links .links-holder .links-wrapper {
@@ -1433,7 +1436,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-contact-us .form-and-links .links-holder .links-wrapper a {
   display: flex;
   align-items: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: clamp(1.125rem, 4.5vw, 1.8rem);
 }
 @media screen and (max-width: 600px) {
@@ -1443,7 +1446,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-contact-us .form-and-links .links-holder .links-wrapper a:hover {
-  color: rgb(63.75, 63.75, 63.75);
+  color: rgb(191.25, 191.25, 191.25);
 }
 .container-contact-us .form-and-links .links-holder .links-wrapper a h6 {
   font-weight: 600;
@@ -1471,14 +1474,14 @@ html.nav-open .toggled-nav-wrapper {
   max-height: 50vh;
   margin: 2vh;
   padding: 20px;
-  background-color: rgb(229.5, 229.5, 229.5);
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  background: rgb(63.75, 63.75, 63.75);
 }
 .container-contact-us .form-and-links .form-holder .form h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .container-contact-us .form-and-links .form-holder .form input, .container-contact-us .form-and-links .form-holder .form textarea {
   display: block;
@@ -1501,7 +1504,7 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 1vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   background-color: rgb(229.5, 229.5, 229.5);
-  color: rgb(0, 0, 0);
+  color: #000000;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -1532,10 +1535,10 @@ html.nav-open .toggled-nav-wrapper {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #666666;
-  color: rgb(0, 0, 0);
+  color: #000000;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   font-size: 1rem;
   z-index: 9999;
   opacity: 0;

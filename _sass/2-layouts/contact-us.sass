@@ -1,4 +1,5 @@
 .container-contact-us
+  background: $secondary
   .contact-us-header-wrapper
     position: relative
     height: 60vh
@@ -20,7 +21,7 @@
           content: ""
           position: absolute
           inset: 0
-          background: $secondary
+          background: $black
           opacity: .5
           z-index: 1
           pointer-events: none
@@ -63,7 +64,7 @@
       h1
         text-align: center
         margin-bottom: 20px
-        color: $secondary
+        color: $white
         flex-shrink: 0 // Prevents it from shrinking
       .links-wrapper
         flex: 1
@@ -76,13 +77,13 @@
         a
           display: flex
           align-items: center
-          color: $secondary
+          color: $primary
           font-size: clamp(1.125rem, 4.5vw, 1.8rem)
           @media screen and (max-width: 600px)
             justify-content: flex-start
             flex-direction: row-reverse
           &:hover
-            color: adjust-color($secondary, $lightness: 25%)
+            color: adjust-color($primary, $lightness: -25%)
           h6
             font-weight: 600
     .external-link-icon
@@ -101,13 +102,13 @@
         max-height: 50vh
         margin: 2vh
         padding: 20px 
-        background-color: lighten($secondary, 90%)
         border-radius: 10px
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+        box-shadow: 0 4px 12px rgba($primary, 0.2)
+        background: adjust-color($secondary, $lightness: 25%)
         h1
           text-align: center
           margin-bottom: 20px
-          color: $secondary
+          color: $primary
         input, textarea
           display: block
           width: 100%
@@ -126,12 +127,12 @@
           border: none
           border-radius: 1vh
           box-shadow: 0 4px 12px rgba(0,0, 0, 0.6)
-          background-color: lighten($secondary, 90%)
-          color: $secondary
+          background-color: lighten($black, 90%)
+          color: $black
           cursor: pointer
           transition: 0.3s ease
         button:hover
-          background-color: lighten($secondary, 99%)
+          background-color: lighten($black, 99%)
 
 
 @keyframes fade
@@ -154,11 +155,11 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  background-color: lighten($secondary, 40%)
-  color: $secondary
+  background-color: lighten($black, 40%)
+  color: $black
   padding: 1rem 1.5rem
   border-radius: 8px
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 4px 12px rgba($primary, 0.2)
   font-size: 1rem
   z-index: 9999
   opacity: 0
