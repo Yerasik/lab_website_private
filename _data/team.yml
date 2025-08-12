@@ -1,13 +1,6 @@
 #IMPORTANT
 #when you change a slide change the data in the assets/img/people folder
 positions:
-  - title: Position 1
-    members:
-      - name: Ajaz Ahmad Bhat
-        information: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
-        email: person1@example.com
-        image: assets/img/team/person1.jpg
-
   - title: Position 2
     members:
       - name: Person 2
