@@ -1453,8 +1453,32 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-contact-us .form-and-links .external-link-icon {
   margin-right: 2vh;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+.container-contact-us .form-and-links .external-link-icon svg#Layer_1 {
   height: 5vh;
   width: 5vh;
+  --scholar-blue: rgb(216.75, 216.75, 216.75);
+  --scholar-dark-blue: rgb(191.25, 191.25, 191.25);
+  --scholar-light-blue: rgb(255, 255, 255);
+  --scholar-mid-blue: rgb(242.25, 242.25, 242.25);
+}
+.container-contact-us .form-and-links .external-link-icon svg#Layer_2 {
+  transform: scale(2);
+  height: 5vh;
+  width: 5vh;
+  --gmail-shade-1: #cccccc;
+  --gmail-shade-2: rgb(216.75, 216.75, 216.75);
+  --gmail-shade-3: rgb(229.5, 229.5, 229.5);
+  --gmail-shade-4: rgb(242.25, 242.25, 242.25);
+  --gmail-shade-5: rgb(255, 255, 255);
+}
+.container-contact-us .form-and-links .external-link-icon svg#Layer_3 {
+  height: 5vh;
+  width: 5vh;
+  color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 600px) {
   .container-contact-us .form-and-links .external-link-icon {

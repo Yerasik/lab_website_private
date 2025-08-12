@@ -73,7 +73,6 @@
         justify-content: space-between
         text-align: right
         height: auto
-        
         a
           display: flex
           align-items: center
@@ -88,8 +87,30 @@
             font-weight: 600
     .external-link-icon
       margin-right: 2vh
+      justify-content: center
+      align-items: center
       height: 5vh
-      width: 5vh
+      svg#Layer_1
+        height: 5vh
+        width: 5vh
+        --scholar-blue: #{adjust-color($primary, $lightness: -15%)}
+        --scholar-dark-blue: #{adjust-color($primary, $lightness: -25%)}
+        --scholar-light-blue: #{$primary}
+        --scholar-mid-blue: #{adjust-color($primary, $lightness: -5%)}
+      svg#Layer_2
+        transform: scale(2)
+        height: 5vh
+        width: 5vh
+        --gmail-shade-1: #{adjust-color($primary, $lightness: -20%)}
+        --gmail-shade-2: #{adjust-color($primary, $lightness: -15%)}
+        --gmail-shade-3: #{adjust-color($primary, $lightness: -10%)}
+        --gmail-shade-4: #{adjust-color($primary, $lightness: -5%)}
+        --gmail-shade-5: #{$primary}
+      svg#Layer_3 
+        height: 5vh
+        width: 5vh
+        color: $primary
+          
       @media screen and (max-width: 600px)
         margin-left: 2vh
         margin-right: 1vh // spacing when icon is before text
@@ -174,6 +195,7 @@
 .hidden 
   display: none
   
+
 
 
 
