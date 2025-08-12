@@ -602,7 +602,6 @@ html.nav-open .toggled-nav-wrapper {
   background: #000000;
   opacity: 0.5;
   z-index: 1;
-  pointer-events: none;
 }
 .container-1 .slider .slide {
   position: relative;
@@ -616,6 +615,7 @@ html.nav-open .toggled-nav-wrapper {
   scroll-snap-align: start;
 }
 .container-1 .slider .slide img {
+  pointer-events: none;
   aspect-ratio: 16/9;
   width: 100%;
   height: 100%;
@@ -642,8 +642,8 @@ html.nav-open .toggled-nav-wrapper {
   text-decoration: none;
   color: #FFFFFF;
 }
-.container-1 .slider .slide .slide-text h1 a:hover {
-  color: rgb(191.25, 191.25, 191.25);
+.container-1 .slider .slide .slide-text h1:hover {
+  transform: scale(1.1);
 }
 .container-1 .slider .slide .slide-text p {
   font-size: clamp(0.75rem, 3vw, 1.25rem);
@@ -660,18 +660,19 @@ html.nav-open .toggled-nav-wrapper {
   font-size: 3rem;
   cursor: pointer;
   z-index: 10;
+  transform-origin: center;
 }
 .container-1 .arrow.left-arrow {
   left: 1vw;
 }
 .container-1 .arrow.left-arrow:hover {
-  color: rgb(191.25, 191.25, 191.25);
+  transform: scale(1.1) translateY(-50%);
 }
 .container-1 .arrow.right-arrow {
   right: 1vw;
 }
 .container-1 .arrow.right-arrow:hover {
-  color: rgb(191.25, 191.25, 191.25);
+  transform: scale(1.1) translateY(-50%);
 }
 .container-1 .int-arrows-body {
   bottom: 1em;
@@ -684,7 +685,11 @@ html.nav-open .toggled-nav-wrapper {
   transform: translateX(-50%);
   z-index: 5;
 }
+.container-1 .int-arrows-body:hover {
+  transform: scale(1.1) translateX(-50%);
+}
 .container-1 .int-arrows-body .int-arrow {
+  display: inline-block;
   position: relative;
   width: 1.5em;
   height: 1.5em;
@@ -692,9 +697,6 @@ html.nav-open .toggled-nav-wrapper {
   border-left: 0.5em solid #FFFFFF;
   transform: rotate(-135deg);
   animation: arrow-load 2s infinite;
-}
-.container-1 .int-arrows-body .int-arrow:hover {
-  color: rgb(191.25, 191.25, 191.25);
 }
 .container-1 .int-arrows-body .int-arrow:nth-child(1) {
   animation-delay: -0.2s;
@@ -856,12 +858,14 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
 }
 .container-2 .scroller .publications-content-wrapper .content-box .read-more a {
+  display: inline-block;
   color: #000000;
   font-weight: 500;
   text-decoration: none;
+  transform-origin: center;
 }
 .container-2 .scroller .publications-content-wrapper .content-box .read-more a:hover {
-  color: rgb(63.75, 63.75, 63.75);
+  transform: scale(1.1);
 }
 
 @keyframes scroll {
