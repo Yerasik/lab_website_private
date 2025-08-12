@@ -33,6 +33,9 @@ nav.nav-wrap
     svg
       height: 100%
       width: auto
+    &:hover
+      transform: scale(1.1)
+    
         
   ul.navigation
     display: flex
@@ -45,11 +48,13 @@ nav.nav-wrap
       display: block
       padding-right: 30px
       a
+        display: inline-block
         color: $white
         transition: all 0.15s ease-in
         font-size: 1em
+        trans
       a:hover
-        color: adjust-color($white, $lightness: -25%)
+        transform: scale(1.1) 
     li:last-of-type
       padding-right: 0
 //Toggled Nav

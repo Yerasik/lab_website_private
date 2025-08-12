@@ -82,7 +82,7 @@
             justify-content: flex-start
             flex-direction: row-reverse
           &:hover
-            color: adjust-color($primary, $lightness: -25%)
+            transform: scale(1.1)
           h6
             font-weight: 600
     .external-link-icon
@@ -126,6 +126,8 @@
         border-radius: 10px
         box-shadow: 0 4px 12px rgba($primary, 0.2)
         background: adjust-color($secondary, $lightness: 25%)
+        &:hover
+          transform: scale(1.05)
         h1
           text-align: center
           margin-bottom: 20px
@@ -153,7 +155,7 @@
           cursor: pointer
           transition: 0.3s ease
         button:hover
-          background-color: lighten($black, 99%)
+          transform: scale(1.05)
 
 
 @keyframes fade

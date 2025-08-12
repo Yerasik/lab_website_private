@@ -31,6 +31,8 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.2)
       overflow: hidden
       background: $white
+      &:hover
+        transform: scale(1.05)
       .news-box-text
         display: flex
         flex-direction: column
@@ -77,9 +79,10 @@
         text-align: right
           
         a
-          color: $black
+          display: inline-block
+          color: $highliting
           font-weight: 500
           text-decoration: none
           &:hover
-            color: adjust-color($black, $lightness: 25%)
+            transform: scale(1.1)
         

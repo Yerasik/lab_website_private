@@ -218,6 +218,8 @@
         box-shadow: 0 4px 12px rgba($primary, 0.2)
         overflow: hidden
         background-color: $white
+        &:hover
+          transform: scale(1.05)
         .content-box-text
           display: flex
           flex-direction: column
@@ -265,8 +267,8 @@
           
           a
             display: inline-block // ensures transform works
-            color: $black
-            font-weight: 500
+            color: $highliting
+            font-weight: bold
             text-decoration: none
             transform-origin: center
             &:hover
