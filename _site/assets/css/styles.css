@@ -928,6 +928,9 @@ html.nav-open .toggled-nav-wrapper {
   overflow: hidden;
   background: #FFFFFF;
 }
+.container-team .member-content-wrapper .content-box:hover {
+  transform: scale(1.05);
+}
 .container-team .member-content-wrapper .content-box .content-box-text {
   display: flex;
   flex-direction: column;
