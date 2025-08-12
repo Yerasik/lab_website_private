@@ -812,7 +812,7 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: rgb(225, 225, 225);
 }
 .container-2 .scroller .publications-content-wrapper .content-box:hover {
   transform: scale(1.05);
@@ -856,7 +856,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
+  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
 }
 .container-2 .scroller .publications-content-wrapper .content-box .read-more {
   position: absolute;
@@ -926,7 +926,7 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  background: #FFFFFF;
+  background: rgb(225, 225, 225);
   justify-content: center;
   align-self: center;
 }
@@ -1001,7 +1001,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 50%;
   height: 100px;
-  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
+  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
 }
 @media screen and (max-width: 600px) {
   .container-team .member-content-wrapper .first-content-box .content-box-text .overlay {
@@ -1035,7 +1035,7 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  background: #FFFFFF;
+  background: rgb(225, 225, 225);
 }
 .container-team .member-content-wrapper .content-box:hover {
   transform: scale(1.05);
@@ -1078,7 +1078,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
+  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
 }
 .container-team .member-content-wrapper .content-box .email {
   position: absolute;
@@ -1303,7 +1303,7 @@ html.nav-open .toggled-nav-wrapper {
   border: 1px solid #333333;
   border-radius: 1vh;
   overflow: hidden;
-  background: #FFFFFF;
+  background: rgb(225, 225, 225);
 }
 .container-projects .projects-wrapper .projects-block:hover {
   transform: scale(1.05);
@@ -1355,7 +1355,7 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-projects .projects-wrapper .projects-block .text .popup-content {
   overflow-wrap: break-word;
-  background: white;
+  background: background;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -1412,7 +1412,7 @@ html.nav-open .toggled-nav-wrapper {
   height: 50vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background: #FFFFFF;
+  background: rgb(225, 225, 225);
 }
 .container-news .news-content-wrapper .news-box:hover {
   transform: scale(1.05);
@@ -1455,7 +1455,7 @@ html.nav-open .toggled-nav-wrapper {
   z-index: 2;
   width: 310px;
   height: 100px;
-  background: linear-gradient(to top, #FFFFFF 0%, transparent 100%);
+  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
 }
 .container-news .news-content-wrapper .news-box .email {
   position: absolute;
@@ -1654,7 +1654,7 @@ html.nav-open .toggled-nav-wrapper {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: rgb(225, 225, 225);
 }
 .container-contact-us .form-and-links .form-holder .form input:focus, .container-contact-us .form-and-links .form-holder .form textarea:focus {
   outline: none;
