@@ -9,28 +9,36 @@ layout: default
     <h1 class="header">News</h1>
     <hr style="margin: 1rem 0;">
   </div>
-
-  <div class="news-content-wrapper">
-    {% for news in site.data.news %}
-      <div class="news-box">
-        <div class="news-box-text">
-          <h1>{{ news.title }}</h1>
-          <div class="image-box">
-            <img src="../{{ news.image }}" alt="{{ news.title }}">
-          </div>
-
-          <p>{{ news.description }}</p>
+  {% for post in site.data.news %}
+  <div class="news-content-wrapper" data-tags="{{ post.tags | join: ',' }}">
+      <div class="post">
+        <div class="post-wrapper" id="{{ post.reference | remove: '#' }}">
+        <div class="number-and-url">
+            <h1>{{post.number}}</h1>
+            <a href="{{post.link}}">URL</a>
+            {% if post.tags %}
+            <div class="tag-wrapper">
+              {% for tag in post.tags %}
+                <div class="tag"><p>{{ tag }}</p></div>
+              {% endfor %}
+            </div>
+            {% endif %}
+            
         </div>
-      
-        <div class="email">
-          <a href="{{ news.link }}">Read more →</a>
+        <div class="information">
+            <h1>{{post.title}}</h1>
+            <p>{{post.authors}}</p>
+            <p class="journal">{{post.journal}}</p>
         </div>
-        <div class="overlay"></div>
-
+        <img src="../{{post.image}}" />
       </div>
-      {% endfor %}
+
+      <hr style="margin: 1rem 0;">
+      </div>
+      
     
   </div>     
+  {% endfor %}    
 </div>
 
  

@@ -11,11 +11,12 @@ layout: default
   <div class="search-wrapper">
     <input type="search-input" id="search" placeholder="Filter">
   </div>
-  {% for publication in site.data.publications %}
-  <div class="publications-content-wrapper" data-tags="{{ publication.tags | join: ',' }}">
-      <div class="publication">
+  <div class="publications-content-wrapper" >
+    {% for publication in site.data.publications %}
+      <div class="publication" data-tags="{{ publication.tags | join: ',' }}">
         <div class="publication-wrapper" id="{{ publication.reference | remove: '#' }}">
-        <div class="number-and-url">
+          <div class="text-wrapper">
+            <div class="number-and-url">
             <h1>{{publication.number}}</h1>
             <a href="{{publication.link}}">URL</a>
             {% if publication.tags %}
@@ -26,22 +27,23 @@ layout: default
             </div>
             {% endif %}
             
-        </div>
-        <div class="information">
-            <h1>{{publication.title}}</h1>
-            <p>{{publication.authors}}</p>
-            <p class="journal">{{publication.journal}}</p>
-        </div>
-        <img src="../{{publication.image}}" />
-      </div>
+            </div>
+            <div class="information">
+              <h1>{{publication.title}}</h1>
+              <p>{{publication.authors}}</p>
+              <p class="journal">{{publication.journal}}</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="../{{publication.image}}" />
+          </div>
 
-      <hr style="margin: 1rem 0;">
+          
+        </div>
+        <hr style="margin: 1rem 0;">
       </div>
-      
-    
-  </div>     
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>    
 </div>
  
 {% include footer.html %}

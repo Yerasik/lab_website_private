@@ -1115,12 +1115,12 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-publications .search-wrapper {
   position: relative;
-  padding: 2vw;
+  padding: 2vw 0 2vw 2vw;
   display: flex;
   justify-content: flex-end;
 }
 .container-publications .search-wrapper input {
-  width: 30%;
+  width: 20%;
   font-size: 1rem;
   height: 1.5rem;
 }
@@ -1137,50 +1137,57 @@ html.nav-open .toggled-nav-wrapper {
   flex-direction: column;
 }
 .container-publications .publications-content-wrapper .publication-wrapper {
-  padding: 2vw;
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 20vh;
-  overflow: hidden;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  display: flex;
+  overflow: hidden;
 }
 .container-publications .publications-content-wrapper .publication-wrapper:hover {
   transform: scale(1.05);
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper {
   position: relative;
-  width: 20%;
+  padding: 2vw;
+  flex: 0 0 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url {
+  position: relative;
+  width: 25%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 600px) {
-  .container-publications .publications-content-wrapper .publication-wrapper .number-and-url {
-    width: 15%;
+  .container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url {
+    width: 20%;
   }
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url h1 {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: rgb(255, 255, 255);
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url a {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url a {
   font-size: clamp(0.75rem, 2vw, 1rem);
   color: #517AF4;
   font-weight: 500;
   text-decoration: none;
   transform-origin: center;
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url a:hover {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url a:hover {
   transform: scale(1.1);
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url .tag-wrapper {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url .tag-wrapper {
+  padding-bottom: 2vh;
   position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   bottom: 0;
 }
-.container-publications .publications-content-wrapper .publication-wrapper .number-and-url .tag-wrapper .tag p {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url .tag-wrapper .tag p {
   display: inline-block;
   padding: 0.3vh 0.7vw;
   border: 1px solid #999999;
@@ -1190,36 +1197,37 @@ html.nav-open .toggled-nav-wrapper {
   white-space: nowrap;
   margin: 0;
 }
-.container-publications .publications-content-wrapper .publication-wrapper .information {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .information {
   position: relative;
-  width: 50%;
+  flex: 0 0 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10vh;
 }
 @media screen and (max-width: 600px) {
-  .container-publications .publications-content-wrapper .publication-wrapper .information {
-    width: 55%;
+  .container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .information {
+    width: 60%;
   }
 }
-.container-publications .publications-content-wrapper .publication-wrapper .information h1 {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .information h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: rgb(255, 255, 255);
 }
-.container-publications .publications-content-wrapper .publication-wrapper .information p {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .information p {
   font-size: clamp(0.75rem, 2vw, 1rem);
   color: white;
   line-height: 1.2em;
 }
-.container-publications .publications-content-wrapper .publication-wrapper .information p.journal {
+.container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .information p.journal {
   position: absolute;
   bottom: 0;
 }
-.container-publications .publications-content-wrapper .publication-wrapper img {
-  aspect-ratio: 9/16;
-  width: 30%;
-  display: block;
+.container-publications .publications-content-wrapper .publication-wrapper .image-box img {
   object-fit: cover;
+  aspect-ratio: 16/9;
+  flex: 0 0 20%;
+  height: 100%;
 }
 
 .container-projects {
@@ -1240,7 +1248,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-projects .header-and-search .header-projects {
-  width: 70%;
+  width: 80%;
   color: rgb(255, 255, 255);
   text-align: left;
 }
@@ -1251,7 +1259,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-projects .header-and-search .search-wrapper-new {
-  width: 30%;
+  width: 20%;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -1311,7 +1319,6 @@ html.nav-open .toggled-nav-wrapper {
 .container-projects .projects-wrapper .projects-block img {
   object-fit: cover;
   width: 20%;
-  height: auto;
   display: block;
   filter: grayscale(40%);
 }
@@ -1395,85 +1402,6 @@ html.nav-open .toggled-nav-wrapper {
   text-align: center;
   margin-top: 12vh;
 }
-.container-news .news-content-wrapper {
-  padding: 2vh;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  gap: 5vw;
-  justify-content: space-around;
-}
-.container-news .news-content-wrapper .news-box {
-  position: relative;
-  padding: 30px 20px 10px 20px;
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 50vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background: rgb(225, 225, 225);
-}
-.container-news .news-content-wrapper .news-box:hover {
-  transform: scale(1.05);
-}
-.container-news .news-content-wrapper .news-box .news-box-text {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.container-news .news-content-wrapper .news-box .news-box-text .image-box {
-  height: 20vh;
-  overflow: hidden;
-}
-.container-news .news-content-wrapper .news-box .news-box-text .image-box img {
-  width: 100%;
-  display: block;
-}
-.container-news .news-content-wrapper .news-box .news-box-text h1 {
-  color: #000000;
-  margin: 0;
-  text-align: left;
-  line-height: 1.2em;
-  padding-bottom: 20px;
-}
-.container-news .news-content-wrapper .news-box .news-box-text p {
-  padding-top: 20px;
-  color: #666666;
-  line-height: 1.2em;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.container-news .news-content-wrapper .news-box .overlay {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  width: 310px;
-  height: 100px;
-  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
-}
-.container-news .news-content-wrapper .news-box .email {
-  position: absolute;
-  bottom: 2vh;
-  z-index: 3;
-  right: 2vh;
-  text-align: right;
-}
-.container-news .news-content-wrapper .news-box .email a {
-  display: inline-block;
-  color: #517AF4;
-  font-weight: 500;
-  text-decoration: none;
-}
-.container-news .news-content-wrapper .news-box .email a:hover {
-  transform: scale(1.1);
-}
-
 .container-contact-us {
   background: rgb(0, 0, 0);
 }
