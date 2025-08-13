@@ -2,23 +2,36 @@
 #when you change a slide change the data in the assets/img/peopl
 - title: News1
   image: assets/img/news/news1.jpg
-  description: text.text.text.text.text.text.text.text.text.text.text.text.
+  description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
+  number: "1"
+  source: source1
+  authors: author1
 
 - title: News2
   image: assets/img/news/news2.jpg
-  description: text.text.text.text.text.text.text.text.text.text.text.text.
+  description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
+  number: "2"
+  source: source2
+  authors: author2
 
 - title: News3
   image: assets/img/news/news3.jpg
-  description: text.text.text.text.text.text.text.text.text.text.text.text.
+  description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
+  number: "3"
+  source: source3
+  authors: author3
 
 - title: News4
   image: assets/img/news/news4.jpg
-  description: text.text.text.text.text.text.text.text.text.text.text.text.
+  description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
+  number: "4"
+  source: source4
+  authors: author4
+
 
 
 

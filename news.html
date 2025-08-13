@@ -9,36 +9,32 @@ layout: default
     <h1 class="header">News</h1>
     <hr style="margin: 1rem 0;">
   </div>
-  {% for post in site.data.news %}
-  <div class="news-content-wrapper" data-tags="{{ post.tags | join: ',' }}">
-      <div class="post">
-        <div class="post-wrapper" id="{{ post.reference | remove: '#' }}">
-        <div class="number-and-url">
+  <div class="news-content-wrapper" >
+    {% for post in site.data.news %}
+      <div class="post" >
+        <div class="post-wrapper" >
+          <div class="text-wrapper">
+            <div class="number-and-url">
             <h1>{{post.number}}</h1>
             <a href="{{post.link}}">URL</a>
-            {% if post.tags %}
-            <div class="tag-wrapper">
-              {% for tag in post.tags %}
-                <div class="tag"><p>{{ tag }}</p></div>
-              {% endfor %}
-            </div>
-            {% endif %}
             
-        </div>
-        <div class="information">
-            <h1>{{post.title}}</h1>
-            <p>{{post.authors}}</p>
-            <p class="journal">{{post.journal}}</p>
-        </div>
-        <img src="../{{post.image}}" />
-      </div>
+            </div>
+            <div class="information">
+              <h1>{{post.title}}</h1>
+              <p>{{post.authors}}</p>
+              <p class="journal">{{post.source}}</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="../{{post.image}}" />
+          </div>
 
-      <hr style="margin: 1rem 0;">
+          
+        </div>
+        <hr style="margin: 1rem 0;">
       </div>
-      
-    
+    {% endfor %}
   </div>     
-  {% endfor %}    
 </div>
 
  
