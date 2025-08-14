@@ -1769,6 +1769,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .publication-page h1 {
+  margin-top: 2vh;
   margin-bottom: 2vh;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -1791,6 +1792,7 @@ html.nav-open .toggled-nav-wrapper {
   aspect-ratio: 16/9;
   width: 60%;
   height: auto;
+  filter: grayscale(40%);
 }
 
 /*# sourceMappingURL=styles.css.map */
