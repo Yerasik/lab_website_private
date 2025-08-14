@@ -1782,6 +1782,13 @@ html.nav-open .toggled-nav-wrapper {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+.publication-page a {
+  display: inline-block;
+  color: #517AF4;
+}
+.publication-page a:hover {
+  transform: scale(1.1);
+}
 .publication-page hr {
   border: none;
   height: 2px;
@@ -1828,6 +1835,13 @@ html.nav-open .toggled-nav-wrapper {
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+.project-page a {
+  display: inline-block;
+  color: #517AF4;
+}
+.project-page a:hover {
+  transform: scale(1.1);
 }
 .project-page hr {
   border: none;
