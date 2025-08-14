@@ -9,6 +9,7 @@
   authors: author1
   journal: journal1
   link: "url1"
+  origin: "url1"
 
 - image: assets/img/publications/publication2.jpg
   title: Title 2
@@ -19,6 +20,7 @@
   authors: author2
   journal: journal2
   link: "url2"
+  origin: "url2"
 
 - image: assets/img/publications/publication3.jpg
   title: Title 3
@@ -29,6 +31,7 @@
   authors: author3
   journal: journal3
   link: "url3"
+  origin: "url3"
 
 - image: assets/img/publications/publication4.jpg
   title: Title 4
@@ -39,6 +42,7 @@
   authors: author4
   journal: journal4
   link: "url4"
+  origin: "url4"
 
 - image: assets/img/publications/publication5.jpg
   title: Title 5
@@ -49,6 +53,7 @@
   authors: author5
   journal: journal5
   link: "url5"
+  origin: "url5"
 
 - image: assets/img/publications/publication6.jpg
   title: Title 6
@@ -59,3 +64,4 @@
   authors: author6
   journal: journal6
   link: "url6"
+  origin: "url6"

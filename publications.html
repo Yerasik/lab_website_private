@@ -14,7 +14,7 @@ layout: default
   <div class="publications-content-wrapper" >
     {% for publication in site.data.publications %}
       <div class="publication" data-tags="{{ publication.tags | join: ',' }}">
-        <div class="publication-wrapper" id="{{ publication.reference | remove: '#' }}">
+        <div class="publication-wrapper" id="{{ publication.reference | remove: '#' }}" data-href="../{{publication.origin}}">
           <div class="text-wrapper">
             <div class="number-and-url">
             <h1>{{publication.number}}</h1>
@@ -50,6 +50,13 @@ layout: default
 
 
 <script>
+
+document.querySelectorAll('.publication-wrapper').forEach(el => {
+  el.addEventListener('click', () => {
+    const url = el.dataset.href;
+    if (url) window.location.href = url;
+  });
+});
   document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("search");
     const wrappers = document.querySelectorAll(".publications-content-wrapper");
