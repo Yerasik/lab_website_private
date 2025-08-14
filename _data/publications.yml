@@ -2,66 +2,80 @@
 #when you change a slide change the data in the assets/img/publications folder
 - image: assets/img/publications/publication1.jpg
   title: Title 1
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-1"
   number: "1"
   tags: ["tag1tag2", "tag2"]
   authors: author1
   journal: journal1
   link: "url1"
-  origin: "url1"
+  origin: "publication/publication1"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+
+  
 
 - image: assets/img/publications/publication2.jpg
   title: Title 2
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-2"
   number: "2"
   tags: "tag2"
   authors: author2
   journal: journal2
   link: "url2"
-  origin: "url2"
+  origin: "publication/publication2"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
 - image: assets/img/publications/publication3.jpg
   title: Title 3
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-3"
   number: "3"
   tags: "tag3"
   authors: author3
   journal: journal3
   link: "url3"
-  origin: "url3"
+  origin: "publication/publication3"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
 - image: assets/img/publications/publication4.jpg
   title: Title 4
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-4"
   number: "4"
   tags: "tag4"
   authors: author4
   journal: journal4
   link: "url4"
-  origin: "url4"
+  origin: "publication/publication4"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
 - image: assets/img/publications/publication5.jpg
   title: Title 5
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-5"
   number: "5"
   tags: "tag5"
   authors: author5
   journal: journal5
   link: "url5"
-  origin: "url5"
+  origin: "publication/publication5"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
 - image: assets/img/publications/publication6.jpg
   title: Title 6
-  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
   reference: "#some-publication-6"
   number: "6"
   tags: "tag6"
   authors: author6
   journal: journal6
   link: "url6"
-  origin: "url6"
+  origin: "publication/publication6"
+  abstract: Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.Abstarct.
+  methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
+  acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
