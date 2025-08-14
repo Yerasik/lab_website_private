@@ -1323,6 +1323,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-projects .projects-wrapper .projects-block img {
   object-fit: cover;
   width: 20%;
+  height: auto;
   display: block;
   filter: grayscale(40%);
 }
