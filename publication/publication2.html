@@ -12,6 +12,7 @@ layout: default
   <p><strong>Authors:</strong> {{ pub.authors }}</p>
   <p><strong>Journal:</strong> {{ pub.journal }}</p>
   <p><strong>Tags:</strong> {{ pub.tags | join: ", " }}</p>
+  <p><strong>Link:</strong> <a href="{{publication.link}}">URL</a></p>
   <h1>Abstract:</h1> 
   <hr>
   <p>{{ pub.abstract }}</p>
