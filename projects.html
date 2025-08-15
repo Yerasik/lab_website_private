@@ -19,7 +19,7 @@ layout: default
   <div class="projects-wrapper">
     {% for projects in site.data.projects %}
     <div class="projects-block" id="{{projects.link}}" data-href="../{{projects.origin}}">
-      <img src="../{{projects.image}}"/>
+      <img src="{{projects.image}}"/>
       <div class="text">
         <h1>{{projects.title}}</h1>
         <p>{{projects.description}}</p>

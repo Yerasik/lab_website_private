@@ -1,6 +1,6 @@
 #IMPORTANT
 #when you change a slide change the data in the assets/img/publications folder
-- image: assets/img/publications/publication1.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 1
   reference: "#some-publication-1"
   number: "1"
@@ -15,7 +15,7 @@
 
   
 
-- image: assets/img/publications/publication2.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 2
   reference: "#some-publication-2"
   number: "2"
@@ -28,7 +28,7 @@
   methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
   acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
-- image: assets/img/publications/publication3.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 3
   reference: "#some-publication-3"
   number: "3"
@@ -41,7 +41,7 @@
   methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
   acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
-- image: assets/img/publications/publication4.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 4
   reference: "#some-publication-4"
   number: "4"
@@ -54,7 +54,7 @@
   methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
   acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
-- image: assets/img/publications/publication5.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 5
   reference: "#some-publication-5"
   number: "5"
@@ -67,7 +67,7 @@
   methodology: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
   acknowledgements: Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.Text.
 
-- image: assets/img/publications/publication6.jpg
+- image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: Title 6
   reference: "#some-publication-6"
   number: "6"
