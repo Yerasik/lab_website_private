@@ -1,7 +1,7 @@
 #IMPORTANT
 #when you change a slide change the data in the assets/img/peopl
 - title: News1
-  image: assets/img/news/news1.jpg
+  image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
   number: "1"
@@ -9,7 +9,7 @@
   authors: author1
 
 - title: News2
-  image: assets/img/news/news2.jpg
+  image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
   number: "2"
@@ -17,7 +17,7 @@
   authors: author2
 
 - title: News3
-  image: assets/img/news/news3.jpg
+  image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
   number: "3"
@@ -25,7 +25,7 @@
   authors: author3
 
 - title: News4
-  image: assets/img/news/news4.jpg
+  image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   description: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
   link: somelink
   number: "4"
