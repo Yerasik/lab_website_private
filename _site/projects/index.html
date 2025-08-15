@@ -88,13 +88,7 @@
     <div class="projects-block" id="some-page-1" data-href="../project/project1">
       <img src="../assets/img/bg/project1.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Knowledge Graphs & AI Recommendations</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Knowledge Graphs & AI Recommendations</h1>
         <p>Developed models for predicting missing graph links, applied to drug discovery, recommendation systems, and HR. Published at ACL, NeurIPS, ICML.</p>
         <p class="tag">#tag1</p>
 
@@ -105,13 +99,7 @@
     <div class="projects-block" id="some-page-2" data-href="../project/project2">
       <img src="../assets/img/bg/project2.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Memory-Driven Reasoning in Robots</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Memory-Driven Reasoning in Robots</h1>
         <p>Robots simulate past experiences to solve new problems creatively. Used in experiments and industrial multi-robot setups.</p>
         <p class="tag">#tag2</p>
 
@@ -122,13 +110,7 @@
     <div class="projects-block" id="some-page-3" data-href="../project/project3">
       <img src="../assets/img/bg/project3.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Motor Intelligence & Body Schema</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Motor Intelligence & Body Schema</h1>
         <p>Robots abstract cause-effect relations from experience, enabling intuitive actions with unseen objects. Featured in Royal Society & BBC.</p>
         <p class="tag">#tag3</p>
 
@@ -139,13 +121,7 @@
     <div class="projects-block" id="some-page-4" data-href="../project/project4">
       <img src="../assets/img/bg/project4.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Motor Intelligence & Body Schema</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Motor Intelligence & Body Schema</h1>
         <p>Neural models improve dexterity and tool use in complex tasks. Applied to iCub and industrial robots for fast, adaptable motion.</p>
         <p class="tag">#tag4</p>
 
@@ -156,13 +132,7 @@
     <div class="projects-block" id="some-page-5" data-href="../project/project5">
       <img src="../assets/img/bg/project5.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Spatial Planning & Multi-Robot Collaboration</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Spatial Planning & Multi-Robot Collaboration</h1>
         <p>Robots coordinate in shared spaces through dynamic planning and task negotiation. Enables scalable teamwork in real-world assembly.</p>
         <p class="tag">#tag5</p>
 
@@ -173,13 +143,7 @@
     <div class="projects-block" id="some-page-6" data-href="../project/project6">
       <img src="../assets/img/bg/project6.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Language & Visual Exploration in Infants</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Language & Visual Exploration in Infants</h1>
         <p>Model explains how babies learn language through visual exploration. Matches patterns across developmental studies.</p>
         <p class="tag">#tag6</p>
 
@@ -190,13 +154,7 @@
     <div class="projects-block" id="some-page-7" data-href="../project/project7">
       <img src="../assets/img/bg/project7.jpg"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>Word Learning Experiments Across Ages</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>content.content.content.content.content.content.content.content.content.content.</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>Word Learning Experiments Across Ages</h1>
         <p>Studies show children’s attention patterns differ from adults. Challenges standard testing and supports new learning models.</p>
         <p class="tag">#tag7</p>
 
@@ -230,26 +188,6 @@ document.querySelectorAll('.projects-block').forEach(el => {
     if (url) window.location.href = url;
   });
 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const openButtons = document.querySelectorAll(".open-popup");
-    const closeButtons = document.querySelectorAll(".close-popup");
-
-    openButtons.forEach(button => {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        const popup = button.closest(".projects-block").querySelector(".popup-overlay");
-        popup.style.display = "flex";
-      });
-    });
-
-    closeButtons.forEach(button => {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        const popup = button.closest(".popup-overlay");
-        popup.style.display = "none";
-      });
-    });
-  });
   document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("search");
     const blocks = document.querySelectorAll(".projects-block");

@@ -1334,7 +1334,7 @@ html.nav-open .toggled-nav-wrapper {
   flex-direction: column;
   height: 16vh;
 }
-.container-projects .projects-wrapper .projects-block .text a h1 {
+.container-projects .projects-wrapper .projects-block .text h1 {
   color: #517AF4;
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
@@ -1348,37 +1348,6 @@ html.nav-open .toggled-nav-wrapper {
   font-size: clamp(0.75rem, 2vw, 1rem);
   bottom: 0;
   z-index: 3;
-}
-.container-projects .projects-wrapper .projects-block .text .popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.container-projects .projects-wrapper .projects-block .text .popup-content {
-  overflow-wrap: break-word;
-  background: background;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  width: 80vw;
-}
-.container-projects .projects-wrapper .projects-block .text #close-popup {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #517AF4;
-  text-decoration: underline;
-  cursor: pointer;
 }
 .container-projects .projects-wrapper .projects-block .overlay {
   position: absolute;

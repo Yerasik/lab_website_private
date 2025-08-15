@@ -21,13 +21,7 @@ layout: default
     <div class="projects-block" id="{{projects.link}}" data-href="../{{projects.origin}}">
       <img src="../{{projects.image}}"/>
       <div class="text">
-        <a href="#" class="open-popup"><h1>{{projects.title}}</h1></a>
-        <div class="popup-overlay" id="popup">
-          <div class="popup-content">
-            <p>{{projects.content}}</p>
-            <a href="#" class="close-popup">Close</a>
-          </div>
-        </div>
+        <h1>{{projects.title}}</h1>
         <p>{{projects.description}}</p>
         <p class="tag">{{projects.tag}}</p>
 
@@ -48,26 +42,6 @@ document.querySelectorAll('.projects-block').forEach(el => {
     if (url) window.location.href = url;
   });
 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const openButtons = document.querySelectorAll(".open-popup");
-    const closeButtons = document.querySelectorAll(".close-popup");
-
-    openButtons.forEach(button => {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        const popup = button.closest(".projects-block").querySelector(".popup-overlay");
-        popup.style.display = "flex";
-      });
-    });
-
-    closeButtons.forEach(button => {
-      button.addEventListener("click", function (e) {
-        e.preventDefault();
-        const popup = button.closest(".popup-overlay");
-        popup.style.display = "none";
-      });
-    });
-  });
   document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("search");
     const blocks = document.querySelectorAll(".projects-block");
