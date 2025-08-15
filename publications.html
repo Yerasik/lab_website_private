@@ -57,19 +57,32 @@ document.querySelectorAll('.publication-wrapper').forEach(el => {
     if (url) window.location.href = url;
   });
 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("search");
-    const wrappers = document.querySelectorAll(".publications-content-wrapper");
 
-    input.addEventListener("input", function () {
-      const query = input.value.trim().toLowerCase();
+</script>
 
-      wrappers.forEach(wrapper => {
-        const tags = wrapper.dataset.tags?.toLowerCase().split(",") || [];
-        const match = query === "" || tags.includes(query);
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("search");
+  const publications = document.querySelectorAll(".publication");
 
-        wrapper.style.display = match ? "block" : "none"; // "block" to contain both .publication and <hr>
-      });
+  input.addEventListener("input", function () {
+    const query = input.value.trim().toLowerCase();
+
+    publications.forEach(pub => {
+      const wrapper = pub.querySelector(".publication-wrapper");
+      const hr = pub.querySelector("hr");
+      const title = wrapper.querySelector(".information h1")?.textContent.toLowerCase() || "";
+      const tags = pub.dataset.tags?.toLowerCase().split(",") || [];
+
+      const titleMatch = title.includes(query);
+      const tagMatch = tags.some(tag => tag.includes(query));
+
+      const shouldShow = query === "" || titleMatch || tagMatch;
+
+      wrapper.style.display = shouldShow ? "flex" : "none";
+      if (hr) hr.style.display = shouldShow ? "block" : "none";
     });
   });
+});
 </script>
+

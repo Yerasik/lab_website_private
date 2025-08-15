@@ -18,7 +18,7 @@ layout: default
   <hr>
   <div class="projects-wrapper">
     {% for projects in site.data.projects %}
-    <div class="projects-block" id="{{projects.link}}" data-href="../{{projects.origin}}">
+    <div class="projects-block" id="{{projects.link}}" data-href="../{{projects.origin}}" data-tags="{{ projects.tags | join: ',' }}">
       <img src="{{projects.image}}"/>
       <div class="text">
         <h1>{{projects.title}}</h1>
@@ -42,23 +42,31 @@ document.querySelectorAll('.projects-block').forEach(el => {
     if (url) window.location.href = url;
   });
 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("search");
-    const blocks = document.querySelectorAll(".projects-block");
+</script>
 
-    input.addEventListener("input", function () {
-      const query = input.value.trim().toLowerCase();
 
-      blocks.forEach(block => {
-        const titleElement = block.querySelector("h1");
-        const title = titleElement?.textContent.toLowerCase() || "";
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("search");
+  const wrappers = document.querySelectorAll(".projects-block");
 
-        const shouldShow = query === "" || title.includes(query);
-        block.style.display = shouldShow ? "flex" : "none";
-      });
+  input.addEventListener("input", function () {
+    const query = input.value.trim().toLowerCase();
+
+    wrappers.forEach(wrapper => {
+      const title = wrapper.querySelector("h1")?.textContent.toLowerCase() || "";
+      const tagText = wrapper.querySelector(".tag")?.textContent.toLowerCase() || "";
+
+      const titleMatch = title.includes(query);
+      const tagMatch = tagText.includes(query);
+
+      const shouldShow = query === "" || titleMatch || tagMatch;
+      wrapper.style.display = shouldShow ? "" : "none"; // "" restores original CSS
     });
   });
+});
 </script>
+
 
 
 

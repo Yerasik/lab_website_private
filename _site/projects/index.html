@@ -85,7 +85,7 @@
   <hr>
   <div class="projects-wrapper">
     
-    <div class="projects-block" id="some-page-1" data-href="../project/project1">
+    <div class="projects-block" id="some-page-1" data-href="../project/project1" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Knowledge Graphs & AI Recommendations</h1>
@@ -96,7 +96,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-2" data-href="../project/project2">
+    <div class="projects-block" id="some-page-2" data-href="../project/project2" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Memory-Driven Reasoning in Robots</h1>
@@ -107,7 +107,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-3" data-href="../project/project3">
+    <div class="projects-block" id="some-page-3" data-href="../project/project3" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Motor Intelligence & Body Schema</h1>
@@ -118,7 +118,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-4" data-href="../project/project4">
+    <div class="projects-block" id="some-page-4" data-href="../project/project4" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Motor Intelligence & Body Schema</h1>
@@ -129,7 +129,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-5" data-href="../project/project5">
+    <div class="projects-block" id="some-page-5" data-href="../project/project5" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Spatial Planning & Multi-Robot Collaboration</h1>
@@ -140,7 +140,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-6" data-href="../project/project6">
+    <div class="projects-block" id="some-page-6" data-href="../project/project6" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Language & Visual Exploration in Infants</h1>
@@ -151,7 +151,7 @@
       <div class="overlay"></div>
     </div>
     
-    <div class="projects-block" id="some-page-7" data-href="../project/project7">
+    <div class="projects-block" id="some-page-7" data-href="../project/project7" data-tags="">
       <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg"/>
       <div class="text">
         <h1>Word Learning Experiments Across Ages</h1>
@@ -188,23 +188,31 @@ document.querySelectorAll('.projects-block').forEach(el => {
     if (url) window.location.href = url;
   });
 });
-  document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("search");
-    const blocks = document.querySelectorAll(".projects-block");
+</script>
 
-    input.addEventListener("input", function () {
-      const query = input.value.trim().toLowerCase();
 
-      blocks.forEach(block => {
-        const titleElement = block.querySelector("h1");
-        const title = titleElement?.textContent.toLowerCase() || "";
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("search");
+  const wrappers = document.querySelectorAll(".projects-block");
 
-        const shouldShow = query === "" || title.includes(query);
-        block.style.display = shouldShow ? "flex" : "none";
-      });
+  input.addEventListener("input", function () {
+    const query = input.value.trim().toLowerCase();
+
+    wrappers.forEach(wrapper => {
+      const title = wrapper.querySelector("h1")?.textContent.toLowerCase() || "";
+      const tagText = wrapper.querySelector(".tag")?.textContent.toLowerCase() || "";
+
+      const titleMatch = title.includes(query);
+      const tagMatch = tagText.includes(query);
+
+      const shouldShow = query === "" || titleMatch || tagMatch;
+      wrapper.style.display = shouldShow ? "" : "none"; // "" restores original CSS
     });
   });
+});
 </script>
+
 
 
 
