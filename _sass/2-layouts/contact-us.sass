@@ -43,7 +43,8 @@
       z-index: 3
       padding: 2vh
       font-size: clamp(2rem, 5vw, 3.125rem)
-  .form-and-links
+  .address-and-links
+    height: auto
     width: 100%
     display: flex
     flex-direction: row
@@ -115,47 +116,53 @@
         margin-left: 2vh
         margin-right: 1vh // spacing when icon is before text
 
-    .form-holder
+  .form-holder
+    height: 50vh
+    width: 100%
+    display: flex                 // ✅ enables flexbox
+    justify-content: center      // ✅ centers horizontally
+    align-items: center
+
+    .form
       width: 50%
-      @media screen and (max-width: 600px)
+      max-height: 50vh
+      margin: 2vh
+      padding: 20px 
+      border-radius: 10px
+      box-shadow: 0 4px 12px rgba($primary, 0.2)
+      background: adjust-color($secondary, $lightness: 25%)
+      &:hover
+        transform: scale(1.05)
+      h1
+        text-align: center
+        margin-bottom: 20px
+        color: $primary
+      input, textarea
+        display: block
         width: 100%
-      .form
-        max-height: 50vh
-        margin: 2vh
-        padding: 20px 
-        border-radius: 10px
-        box-shadow: 0 4px 12px rgba($primary, 0.2)
-        background: adjust-color($secondary, $lightness: 25%)
-        &:hover
-          transform: scale(1.05)
-        h1
-          text-align: center
-          margin-bottom: 20px
-          color: $primary
-        input, textarea
-          display: block
-          width: 100%
-          margin-bottom: 10px
-          padding: 10px
-          border: none
-          border-radius: 5px
-          background-color: $background
-        input:focus, textarea:focus
-          outline: none
-          box-shadow: 0 4px 12px rgba(0,0, 0, 0.6)
-        button
-          arsplay: bloCK
-          width: 100%
-          padding: 10px 
-          border: none
-          border-radius: 1vh
-          box-shadow: 0 4px 12px rgba(0,0, 0, 0.6)
-          background-color: lighten($black, 90%)
-          color: $black
-          cursor: pointer
-          transition: 0.3s ease
-        button:hover
-          transform: scale(1.05)
+        margin-bottom: 10px
+        padding: 10px
+        border: none
+        border-radius: 5px
+        background-color: $background
+      textarea
+        height: 10vh
+      input:focus, textarea:focus
+        outline: none
+        box-shadow: 0 4px 12px rgba(0,0, 0, 0.6)
+      button
+        arsplay: bloCK
+        width: 100%
+        padding: 10px 
+        border: none
+        border-radius: 1vh
+        box-shadow: 0 4px 12px rgba(0,0, 0, 0.6)
+        background-color: lighten($black, 90%)
+        color: $black
+        cursor: pointer
+        transition: 0.3s ease
+      button:hover
+        transform: scale(1.05)
 
 
 @keyframes fade

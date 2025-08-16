@@ -582,6 +582,9 @@ html.nav-open .toggled-nav-wrapper {
   line-height: 1.4;
   color: rgb(0, 0, 0);
 }
+.lab-footer .footer-right address p.remove {
+  display: none;
+}
 
 .container-1 {
   position: relative;
@@ -1531,18 +1534,19 @@ html.nav-open .toggled-nav-wrapper {
   padding: 2vh;
   font-size: clamp(2rem, 5vw, 3.125rem);
 }
-.container-contact-us .form-and-links {
+.container-contact-us .address-and-links {
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 @media screen and (max-width: 600px) {
-  .container-contact-us .form-and-links {
+  .container-contact-us .address-and-links {
     flex-direction: column;
     height: 90vh;
   }
 }
-.container-contact-us .form-and-links .links-holder {
+.container-contact-us .address-and-links .links-holder {
   height: 100%;
   width: 50%;
   margin: 2vh;
@@ -1553,17 +1557,17 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
 }
 @media screen and (max-width: 600px) {
-  .container-contact-us .form-and-links .links-holder {
+  .container-contact-us .address-and-links .links-holder {
     width: 100%;
   }
 }
-.container-contact-us .form-and-links .links-holder h1 {
+.container-contact-us .address-and-links .links-holder h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #FFFFFF;
   flex-shrink: 0;
 }
-.container-contact-us .form-and-links .links-holder .links-wrapper {
+.container-contact-us .address-and-links .links-holder .links-wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1571,31 +1575,31 @@ html.nav-open .toggled-nav-wrapper {
   text-align: right;
   height: auto;
 }
-.container-contact-us .form-and-links .links-holder .links-wrapper a {
+.container-contact-us .address-and-links .links-holder .links-wrapper a {
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
   font-size: clamp(1.125rem, 4.5vw, 1.8rem);
 }
 @media screen and (max-width: 600px) {
-  .container-contact-us .form-and-links .links-holder .links-wrapper a {
+  .container-contact-us .address-and-links .links-holder .links-wrapper a {
     justify-content: flex-start;
     flex-direction: row-reverse;
   }
 }
-.container-contact-us .form-and-links .links-holder .links-wrapper a:hover {
+.container-contact-us .address-and-links .links-holder .links-wrapper a:hover {
   transform: scale(1.1);
 }
-.container-contact-us .form-and-links .links-holder .links-wrapper a h6 {
+.container-contact-us .address-and-links .links-holder .links-wrapper a h6 {
   font-weight: 600;
 }
-.container-contact-us .form-and-links .external-link-icon {
+.container-contact-us .address-and-links .external-link-icon {
   margin-right: 2vh;
   justify-content: center;
   align-items: center;
   height: 5vh;
 }
-.container-contact-us .form-and-links .external-link-icon svg#Layer_1 {
+.container-contact-us .address-and-links .external-link-icon svg#Layer_1 {
   height: 5vh;
   width: 5vh;
   --scholar-blue: rgb(216.75, 216.75, 216.75);
@@ -1603,7 +1607,7 @@ html.nav-open .toggled-nav-wrapper {
   --scholar-light-blue: rgb(255, 255, 255);
   --scholar-mid-blue: rgb(242.25, 242.25, 242.25);
 }
-.container-contact-us .form-and-links .external-link-icon svg#Layer_2 {
+.container-contact-us .address-and-links .external-link-icon svg#Layer_2 {
   transform: scale(2);
   height: 5vh;
   width: 5vh;
@@ -1613,26 +1617,26 @@ html.nav-open .toggled-nav-wrapper {
   --gmail-shade-4: rgb(242.25, 242.25, 242.25);
   --gmail-shade-5: rgb(255, 255, 255);
 }
-.container-contact-us .form-and-links .external-link-icon svg#Layer_3 {
+.container-contact-us .address-and-links .external-link-icon svg#Layer_3 {
   height: 5vh;
   width: 5vh;
   color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 600px) {
-  .container-contact-us .form-and-links .external-link-icon {
+  .container-contact-us .address-and-links .external-link-icon {
     margin-left: 2vh;
     margin-right: 1vh;
   }
 }
-.container-contact-us .form-and-links .form-holder {
+.container-contact-us .form-holder {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-contact-us .form-holder .form {
   width: 50%;
-}
-@media screen and (max-width: 600px) {
-  .container-contact-us .form-and-links .form-holder {
-    width: 100%;
-  }
-}
-.container-contact-us .form-and-links .form-holder .form {
   max-height: 50vh;
   margin: 2vh;
   padding: 20px;
@@ -1640,15 +1644,15 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   background: rgb(63.75, 63.75, 63.75);
 }
-.container-contact-us .form-and-links .form-holder .form:hover {
+.container-contact-us .form-holder .form:hover {
   transform: scale(1.05);
 }
-.container-contact-us .form-and-links .form-holder .form h1 {
+.container-contact-us .form-holder .form h1 {
   text-align: center;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
 }
-.container-contact-us .form-and-links .form-holder .form input, .container-contact-us .form-and-links .form-holder .form textarea {
+.container-contact-us .form-holder .form input, .container-contact-us .form-holder .form textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -1657,11 +1661,14 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 5px;
   background-color: rgb(225, 225, 225);
 }
-.container-contact-us .form-and-links .form-holder .form input:focus, .container-contact-us .form-and-links .form-holder .form textarea:focus {
+.container-contact-us .form-holder .form textarea {
+  height: 10vh;
+}
+.container-contact-us .form-holder .form input:focus, .container-contact-us .form-holder .form textarea:focus {
   outline: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
-.container-contact-us .form-and-links .form-holder .form button {
+.container-contact-us .form-holder .form button {
   arsplay: bloCK;
   width: 100%;
   padding: 10px;
@@ -1673,7 +1680,7 @@ html.nav-open .toggled-nav-wrapper {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.container-contact-us .form-and-links .form-holder .form button:hover {
+.container-contact-us .form-holder .form button:hover {
   transform: scale(1.05);
 }
 
