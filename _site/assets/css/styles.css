@@ -1479,9 +1479,12 @@ html.nav-open .toggled-nav-wrapper {
 }
 
 .container-contact-us {
+  width: 100%;
+  overflow: hidden;
   background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 .container-contact-us .contact-us-header-wrapper {
   position: relative;
@@ -1536,7 +1539,108 @@ html.nav-open .toggled-nav-wrapper {
   padding: 2vh;
   font-size: clamp(2rem, 5vw, 3.125rem);
 }
+.container-contact-us .vacancies-wrapper {
+  height: 100vh;
+  position: relative;
+}
+.container-contact-us .vacancies-wrapper .header {
+  margin-top: 18vh;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .container-contact-us .vacancies-wrapper .header {
+    margin-top: 12vh;
+  }
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper {
+  overflow-x: auto;
+  -webkit-mask: linear-gradient(90deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+  mask: linear-gradient(90deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+  margin: auto;
+  max-width: 1500px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
+  padding: 2vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .container-contact-us .vacancies-wrapper .vacancy-content-wrapper {
+    max-width: 400px;
+  }
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box {
+  position: relative;
+  padding: 30px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  height: 60vh;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  background-color: rgb(225, 225, 225);
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box:hover {
+  transform: scale(1.05);
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 310px;
+  height: 100px;
+  background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text .image-box {
+  height: 20vh;
+  overflow: hidden;
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text .image-box img {
+  width: 100%;
+  display: block;
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text h1 {
+  color: #000000;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text p {
+  padding-top: 20px;
+  color: black;
+  line-height: 1.2em;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .container-contact-us .address-links-map {
+  position: relative;
   max-height: 50vh;
   width: 100%;
   display: flex;

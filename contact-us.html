@@ -19,18 +19,21 @@ layout: default
     {% for vacancy in site.data.vacancies %}
       <div class="content-box">
           <div class="content-box-text">
-          <h1>{{ vacancy.name }}</h1>
+          <h1>{{ vacancy.position }}</h1>
           <div class="image-box">
-            <img src="../{{ vacancy.image }}" alt="{{ vacancy.name }}">
+            <img src="../{{ vacancy.image }}" alt="{{ vacancy.position }}">
           </div>
-
-          <p>{{ vacancy.information }}</p>
+          <p>Description:</p>
+          <p>{{ vacancy.description }}</p>
+          <p>Requirements:</p>
+          <p>{{ vacancy.requirements }}</p>
         </div>
+        <div class="overlay"></div>
 
       </div>
     {% endfor %}
-    
-    </div>     
+        
+    </div>
   </div>
   <div class="address-links-map">
     <div class="address-and-links">
