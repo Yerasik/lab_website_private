@@ -1,5 +1,7 @@
 .container-contact-us
   background: $secondary
+  display: flex
+  flex-direction: column
   .contact-us-header-wrapper
     position: relative
     height: 60vh
@@ -43,78 +45,104 @@
       z-index: 3
       padding: 2vh
       font-size: clamp(2rem, 5vw, 3.125rem)
-  .address-and-links
-    height: auto
+  .address-links-map
+    max-height: 50vh
     width: 100%
     display: flex
     flex-direction: row
     @media screen and (max-width: 600px)
+      max-height: 100vh
       flex-direction: column
-      height: 90vh
-    .links-holder
+    .map
+      width: 50%
+      height: 50vh
+      @media screen and (max-width: 600px)
+        padding-top: 2vh
+        width: 100%
+    .address-and-links
+      padding: 2vh
       height: 100%
       width: 50%
-      margin: 2vh
-      padding: 20px 
       display: flex
       flex-direction: column
-      justify-content: space-between
-      text-align: right
       @media screen and (max-width: 600px)
         width: 100%
-      h1
-        text-align: center
-        margin-bottom: 20px
-        color: $white
-        flex-shrink: 0 // Prevents it from shrinking
-      .links-wrapper
-        flex: 1
+      .address
+        h1
+          text-align: center
+          margin-bottom: 20px
+          color: $white
+          flex-shrink: 0
+        p
+          margin-left: 5vh
+          font-size: clamp(0.75rem, 3vw, 1.25rem)
+          @media screen and (max-width: 600px)
+            margin-left: 0
+      @media screen and (max-width: 600px)
+        flex-direction: column
+      .links-holder
+        height: 100%
+        width: 100%
+        padding: 20px 
         display: flex
         flex-direction: column
         justify-content: space-between
         text-align: right
-        height: auto
-        a
+        @media screen and (max-width: 600px)
+          width: 100%
+        h1
+          text-align: center
+          margin-bottom: 20px
+          color: $white
+          flex-shrink: 0 // Prevents it from shrinking
+        .links-wrapper
+          flex: 1
           display: flex
-          align-items: center
+          flex-direction: column
+          justify-content: space-between
+          text-align: right
+          height: auto
+          a
+            display: flex
+            align-items: center
+            color: $primary
+            @media screen and (max-width: 600px)
+              justify-content: flex-start
+              flex-direction: row-reverse
+            &:hover
+              transform: scale(1.1)
+            p
+              font-size: clamp(0.75rem, 3vw, 1.25rem)
+              font-weight: 600
+      .external-link-icon
+        margin-right: 2vh
+        justify-content: center
+        align-items: center
+        height: 5vh
+        svg#Layer_1
+          height: 5vh
+          width: 5vh
+          --scholar-blue: #{adjust-color($primary, $lightness: -15%)}
+          --scholar-dark-blue: #{adjust-color($primary, $lightness: -25%)}
+          --scholar-light-blue: #{$primary}
+          --scholar-mid-blue: #{adjust-color($primary, $lightness: -5%)}
+        svg#Layer_2
+          transform: scale(2)
+          height: 5vh
+          width: 5vh
+          --gmail-shade-1: #{adjust-color($primary, $lightness: -20%)}
+          --gmail-shade-2: #{adjust-color($primary, $lightness: -15%)}
+          --gmail-shade-3: #{adjust-color($primary, $lightness: -10%)}
+          --gmail-shade-4: #{adjust-color($primary, $lightness: -5%)}
+          --gmail-shade-5: #{$primary}
+        svg#Layer_3 
+          height: 5vh
+          width: 5vh
           color: $primary
-          font-size: clamp(1.125rem, 4.5vw, 1.8rem)
-          @media screen and (max-width: 600px)
-            justify-content: flex-start
-            flex-direction: row-reverse
-          &:hover
-            transform: scale(1.1)
-          h6
-            font-weight: 600
-    .external-link-icon
-      margin-right: 2vh
-      justify-content: center
-      align-items: center
-      height: 5vh
-      svg#Layer_1
-        height: 5vh
-        width: 5vh
-        --scholar-blue: #{adjust-color($primary, $lightness: -15%)}
-        --scholar-dark-blue: #{adjust-color($primary, $lightness: -25%)}
-        --scholar-light-blue: #{$primary}
-        --scholar-mid-blue: #{adjust-color($primary, $lightness: -5%)}
-      svg#Layer_2
-        transform: scale(2)
-        height: 5vh
-        width: 5vh
-        --gmail-shade-1: #{adjust-color($primary, $lightness: -20%)}
-        --gmail-shade-2: #{adjust-color($primary, $lightness: -15%)}
-        --gmail-shade-3: #{adjust-color($primary, $lightness: -10%)}
-        --gmail-shade-4: #{adjust-color($primary, $lightness: -5%)}
-        --gmail-shade-5: #{$primary}
-      svg#Layer_3 
-        height: 5vh
-        width: 5vh
-        color: $primary
-          
-      @media screen and (max-width: 600px)
-        margin-left: 2vh
-        margin-right: 1vh // spacing when icon is before text
+            
+        @media screen and (max-width: 600px)
+          margin-left: 2vh
+          margin-right: 1vh // spacing when icon is before text
 
   .form-holder
     height: 50vh
@@ -131,6 +159,8 @@
       border-radius: 10px
       box-shadow: 0 4px 12px rgba($primary, 0.2)
       background: adjust-color($secondary, $lightness: 25%)
+      @media screen and (max-width: 600px)
+        width: 90%
       &:hover
         transform: scale(1.05)
       h1
