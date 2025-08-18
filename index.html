@@ -76,13 +76,13 @@ layout: default
   <div class="scroller-news">
     <div class="news-content-wrapper" >
     {% for post in site.data.news %}
-      <div class="news-wrapper" data-href="{{post.link}}">
+      <div class="news-wrapper" data-href=" {{ post.link }} ">
         <div class="text-wrapper">
           <div class="date">
-            <p>{{post.date}}</p>       
+            <p> {{ post.date }} </p>       
             <hr>
           </div>
-          <p>{{post.description}}</p>
+          <p> {{ post.description }} </p>
         </div>
       </div>
     {% endfor %}
