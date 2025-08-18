@@ -4,7 +4,7 @@
 .container-1
   position: relative
   height: 100vh
-
+  overflow: hidden
   .slider
     height: 100%
     display: flex
@@ -135,10 +135,9 @@
             opacity: 0
             transform: rotate(-135deg) translate(-1em, -1em)
 .container-news
+  overflow: hidden
   position: relative
   height: 100dvh
-  width: 100vw
-  overflow: hidden 
   background: $secondary
   .header
     margin-top: 18vh
@@ -233,27 +232,27 @@
     &:hover
       transform: scale(1.1) translateX(-50%)
     .int-arrow
-        display: inline-block // ensures transform works
-        position: relative
-        width: 1.5em
-        height: 1.5em
-        border-top: 0.5em solid $white
-        border-left: 0.5em solid $white
-        transform: rotate(-135deg)
-        animation: arrow-load 2s infinite
+      display: inline-block // ensures transform works
+      position: relative
+      width: 1.5em
+      height: 1.5em
+      border-top: 0.5em solid $white
+      border-left: 0.5em solid $white
+      transform: rotate(-135deg)
+      animation: arrow-load 2s infinite
     .int-arrow:nth-child(1)
         animation-delay: -0.2s
     .int-arrow:nth-child(2)
         top: 1em
     @keyframes arrow-load
-        0%
-            opacity: 0
-            transform: rotate(-135deg) translate(1em, 1em)
-        0%
-            opacity: 1
-        100%
-            opacity: 0
-            transform: rotate(-135deg) translate(-1em, -1em)
+      0%
+        opacity: 0
+        transform: rotate(-135deg) translate(1em, 1em)
+      0%
+        opacity: 1
+      100%
+        opacity: 0
+        transform: rotate(-135deg) translate(-1em, -1em)
      
 
   

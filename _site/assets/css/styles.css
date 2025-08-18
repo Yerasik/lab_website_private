@@ -589,6 +589,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-1 {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 .container-1 .slider {
   height: 100%;
@@ -727,10 +728,9 @@ html.nav-open .toggled-nav-wrapper {
 }
 
 .container-news {
+  overflow: hidden;
   position: relative;
   height: 100dvh;
-  width: 100vw;
-  overflow: hidden;
   background: rgb(0, 0, 0);
 }
 .container-news .header {
@@ -1548,45 +1548,45 @@ html.nav-open .toggled-nav-wrapper {
   background: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 100%);
 }
 
-.container-news {
+.container-news-original {
+  position: relative;
   padding: 5vh;
-  overflow: hidden;
   background: rgb(0, 0, 0);
   overflow: hidden;
 }
 @media screen and (max-width: 600px) {
-  .container-news {
+  .container-news-original {
     padding: 5vh 0 0 0;
   }
 }
-.container-news .header-wrapper {
+.container-news-original .header-wrapper {
   width: 30vw;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-.container-news .header-wrapper .header {
+.container-news-original .header-wrapper .header {
   margin-top: 18vh;
   color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 12vh;
 }
-.container-news .news-content-wrapper {
+.container-news-original .news-content-wrapper {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
 }
-.container-news .news-content-wrapper .post-wrapper {
+.container-news-original .news-content-wrapper .post-wrapper {
   width: 100%;
   height: 20vh;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   display: flex;
   overflow: hidden;
 }
-.container-news .news-content-wrapper .post-wrapper:hover {
+.container-news-original .news-content-wrapper .post-wrapper:hover {
   transform: scale(1.05);
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper {
   position: relative;
   padding: 2vw;
   flex: 0 0 80%;
@@ -1594,32 +1594,32 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   flex-direction: row;
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url {
   position: relative;
   width: 25%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 600px) {
-  .container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url {
+  .container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url {
     width: 20%;
   }
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url h1 {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: rgb(255, 255, 255);
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url a {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url a {
   font-size: clamp(0.75rem, 2vw, 1rem);
   color: #517AF4;
   font-weight: 500;
   text-decoration: none;
   transform-origin: center;
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url a:hover {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url a:hover {
   transform: scale(1.1);
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url .tag-wrapper {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url .tag-wrapper {
   padding-bottom: 2vh;
   position: absolute;
   display: flex;
@@ -1627,7 +1627,7 @@ html.nav-open .toggled-nav-wrapper {
   flex-wrap: wrap;
   bottom: 0;
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .number-and-url .tag-wrapper .tag p {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url .tag-wrapper .tag p {
   display: inline-block;
   padding: 0.3vh 0.7vw;
   border: 1px solid #999999;
@@ -1637,7 +1637,7 @@ html.nav-open .toggled-nav-wrapper {
   white-space: nowrap;
   margin: 0;
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .information {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .information {
   position: relative;
   flex: 0 0 75%;
   height: 100%;
@@ -1646,24 +1646,24 @@ html.nav-open .toggled-nav-wrapper {
   padding-bottom: 10vh;
 }
 @media screen and (max-width: 600px) {
-  .container-news .news-content-wrapper .post-wrapper .text-wrapper .information {
+  .container-news-original .news-content-wrapper .post-wrapper .text-wrapper .information {
     width: 60%;
   }
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .information h1 {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .information h1 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: rgb(255, 255, 255);
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .information p {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .information p {
   font-size: clamp(0.75rem, 2vw, 1rem);
   color: white;
   line-height: 1.2em;
 }
-.container-news .news-content-wrapper .post-wrapper .text-wrapper .information p.journal {
+.container-news-original .news-content-wrapper .post-wrapper .text-wrapper .information p.journal {
   position: absolute;
   bottom: 0;
 }
-.container-news .news-content-wrapper .post-wrapper .image-box img {
+.container-news-original .news-content-wrapper .post-wrapper .image-box img {
   object-fit: cover;
   aspect-ratio: 16/9;
   flex: 0 0 20%;
