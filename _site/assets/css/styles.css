@@ -1549,40 +1549,41 @@ html.nav-open .toggled-nav-wrapper {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .vacancies-wrapper .header {
     margin-top: 12vh;
   }
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper {
-  overflow-x: auto;
-  -webkit-mask: linear-gradient(90deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
-  mask: linear-gradient(90deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+.container-contact-us .vacancies-wrapper .scroller {
   margin: auto;
   max-width: 1500px;
   position: absolute;
+  overflow-x: auto;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-mask: linear-gradient(90deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+}
+.container-contact-us .vacancies-wrapper .scroller::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .container-contact-us .vacancies-wrapper .scroller {
+    max-width: 400px;
+  }
+}
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
-  padding: 2vh;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  padding: 60px 20px 0;
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper::-webkit-scrollbar {
-  display: none;
-}
-@media screen and (max-width: 600px) {
-  .container-contact-us .vacancies-wrapper .vacancy-content-wrapper {
-    max-width: 400px;
-  }
-}
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box {
   position: relative;
   padding: 30px 20px 10px 20px;
   display: flex;
@@ -1595,10 +1596,10 @@ html.nav-open .toggled-nav-wrapper {
   overflow: hidden;
   background-color: rgb(225, 225, 225);
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box:hover {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box:hover {
   transform: scale(1.05);
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .overlay {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .overlay {
   position: absolute;
   bottom: 0;
   z-index: 2;
@@ -1606,28 +1607,28 @@ html.nav-open .toggled-nav-wrapper {
   height: 100px;
   background: linear-gradient(to top, rgb(225, 225, 225) 0%, transparent 100%);
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .content-box-text {
   display: flex;
   flex-direction: column;
   flex: 1;
   position: relative;
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text .image-box {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .content-box-text .image-box {
   height: 20vh;
   overflow: hidden;
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text .image-box img {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .content-box-text .image-box img {
   width: 100%;
   display: block;
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text h1 {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .content-box-text h1 {
   color: #000000;
   margin: 0;
   text-align: left;
   line-height: 1.2em;
   padding-bottom: 20px;
 }
-.container-contact-us .vacancies-wrapper .vacancy-content-wrapper .content-box .content-box-text p {
+.container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box .content-box-text p {
   padding-top: 20px;
   color: black;
   line-height: 1.2em;
@@ -1646,7 +1647,7 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map {
     max-height: 100vh;
     flex-direction: column;
@@ -1656,7 +1657,7 @@ html.nav-open .toggled-nav-wrapper {
   width: 50%;
   height: 50vh;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .map {
     padding-top: 2vh;
     width: 100%;
@@ -1669,7 +1670,7 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links {
     width: 100%;
   }
@@ -1684,12 +1685,12 @@ html.nav-open .toggled-nav-wrapper {
   margin-left: 5vh;
   font-size: clamp(0.75rem, 3vw, 1.25rem);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links .address p {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links {
     flex-direction: column;
   }
@@ -1703,7 +1704,7 @@ html.nav-open .toggled-nav-wrapper {
   justify-content: space-between;
   text-align: right;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links .links-holder {
     width: 100%;
   }
@@ -1727,7 +1728,7 @@ html.nav-open .toggled-nav-wrapper {
   align-items: center;
   color: rgb(255, 255, 255);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links .links-holder .links-wrapper a {
     justify-content: flex-start;
     flex-direction: row-reverse;
@@ -1769,14 +1770,14 @@ html.nav-open .toggled-nav-wrapper {
   width: 5vh;
   color: rgb(255, 255, 255);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links .external-link-icon {
     margin-left: 2vh;
     margin-right: 1vh;
   }
 }
 .container-contact-us .form-holder {
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1791,7 +1792,7 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   background: rgb(63.75, 63.75, 63.75);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container-contact-us .form-holder .form {
     width: 90%;
   }
