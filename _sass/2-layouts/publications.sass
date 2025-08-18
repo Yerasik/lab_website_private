@@ -2,6 +2,9 @@
   position: relative
   padding: 5vh
   background: $secondary
+  overflow: hidden
+  @media screen and (max-width: 600px)
+      padding: 5vh 0 0 0
   .header
     margin-top: 18vh
     margin-bottom: 2vh
@@ -44,6 +47,7 @@
     flex-wrap: wrap
     display: flex
     flex-direction: column 
+    width: 100%
     .publication-wrapper
       cursor: pointer
       width: 100%

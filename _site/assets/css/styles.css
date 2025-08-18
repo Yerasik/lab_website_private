@@ -1257,6 +1257,12 @@ html.nav-open .toggled-nav-wrapper {
   position: relative;
   padding: 5vh;
   background: rgb(0, 0, 0);
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .container-publications {
+    padding: 5vh 0 0 0;
+  }
 }
 .container-publications .header {
   margin-top: 18vh;
@@ -1309,6 +1315,7 @@ html.nav-open .toggled-nav-wrapper {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .container-publications .publications-content-wrapper .publication-wrapper {
   cursor: pointer;
@@ -1545,6 +1552,12 @@ html.nav-open .toggled-nav-wrapper {
   padding: 5vh;
   overflow: hidden;
   background: rgb(0, 0, 0);
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .container-news {
+    padding: 5vh 0 0 0;
+  }
 }
 .container-news .header-wrapper {
   width: 30vw;
