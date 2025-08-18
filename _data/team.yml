@@ -6,18 +6,18 @@ positions:
       - name: Person 2
         information: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
         email: person2@example.com
-        image: assets/img/team/person0.jpg
+        image: assets/img/team/person0.png
       - name: Person 3
         information: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
         email: person3@example.com
-        image: assets/img/team/person0.jpg
+        image: assets/img/team/person0.png
 
   - title: Position 3
     members:
       - name: Person 4
         information: text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.text.
         email: person4@example.com
-        image: assets/img/team/person0.jpg
+        image: assets/img/team/person0.png
 
 
 
