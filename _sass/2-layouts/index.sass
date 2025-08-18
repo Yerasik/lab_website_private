@@ -134,8 +134,96 @@
         100%
             opacity: 0
             transform: rotate(-135deg) translate(-1em, -1em)
+.container-news
+  position: relative
+  height: 100dvh
+  width: 100vw
+  overflow: hidden 
+  background: $secondary
+  .header
+    margin-top: 18vh
+    position: relative
+    color: $primary
+    text-align: center
+    @media screen and (max-width: 600px)
+      margin-top: 12vh
+  .scroller-news
+    -webkit-mask: linear-gradient(0deg,transparent,$secondary 20%,$secondary  80%,transparent)
+    mask: linear-gradient(0deg, transparent, $secondary  20%, $secondary  80%, transparent)
+    margin: auto
+    width: 100vw 
+    max-height: 60vh 
+    position: absolute
+    top: 55%
+    left: 50%
+    overflow-x: hidden
+    overflow-y: auto
+    transform: translate(-50%, -50%)
+    padding-bottom: 1rem
+    croll-snap-type: y mandatory
+    scroll-behavior: smooth
+    scrollbar-width: none // Firefox
+    -ms-overflow-style: none
 
-.container-2
+    &::-webkit-scrollbar
+      display: none // Safari and Chrome
+    @media screen and (max-width: 600px)
+      max-width: 400px 
+    .news-content-wrapper
+      padding-right: 5vh
+      padding-left: 5vh
+      width: 100%
+      flex-wrap: wrap
+      display: flex
+      flex-direction: column 
+      gap: 2vh
+      .news-wrapper
+        cursor: pointer
+        background-color: $background
+        width: 100%
+        height: 110px
+        box-shadow: 0 4px 12px rgba($primary, 0.2)
+        display: flex
+        overflow: hidden
+        border-radius: 8px
+        @media screen and (max-width: 600px)
+          height: 80px
+        &:hover
+          transform: scale(1.05) 
+        .text-wrapper
+          position: relative
+          padding: 2vh
+          height: 100%
+          width: 100%
+          display: flex
+          flex-direction: column
+          .date
+            padding-bottom: 1vh
+            p
+              color: $secondary
+          p
+            color: adjust-color($secondary, $lightness: 40%)
+            font-size: clamp(0.75rem, 2vw, 1rem)
+            line-height: 1.2em
+            white-space: normal
+            word-break: break-word
+            overflow-wrap: break-word
+            display: -webkit-box
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+            overflow: hidden
+            @media screen and (max-width: 600px)
+              -webkit-line-clamp: 1
+          hr
+            border: none; // removes default border
+            height: 1px; // sets thickness
+            background-color: $secondary; // uses your theme color
+            margin: 2px 0; // adds spacing above and below
+            width: 100%; // ensures it stretches across the container
+     
+
+  
+.container-3
   position: relative
   height: 100dvh
   overflow: hidden 
