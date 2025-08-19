@@ -60,6 +60,9 @@
           font-weight: 500
           line-height: 1.2em
           padding: 0 10px 5px 10px
+          will-change: transform
+          transition: transform 0.3s ease
+          
           a
             text-decoration: none
             color: $white
@@ -69,7 +72,7 @@
         p
           font-size: clamp(0.75rem, 3vw, 1.25rem)
           font-weight: 300
-          color: $secondary
+          color: $white
           line-height: 1.2em
 
 
@@ -90,6 +93,8 @@
     cursor: pointer
     z-index: 10
     transform-origin: center
+    will-change: transform
+    transition: transform 0.3s ease
 
     &.left-arrow
       left: 1vw
@@ -111,6 +116,8 @@
     left: 50%
     transform: translateX(-50%) // centers it horizontally
     z-index: 5
+    will-change: transform
+    transition: transform 0.3s ease
     &:hover
       transform: scale(1.1) translateX(-50%)
     .int-arrow
@@ -135,6 +142,7 @@
         100%
             opacity: 0
             transform: rotate(-135deg) translate(-1em, -1em)
+
 .container-news
   overflow: hidden
   position: relative
@@ -148,28 +156,32 @@
     @media screen and (max-width: 600px)
       margin-top: 12vh
   .scroller-news
-    -webkit-mask: linear-gradient(0deg,transparent,$secondary 20%,$secondary  80%,transparent)
-    mask: linear-gradient(0deg, transparent, $secondary  20%, $secondary  80%, transparent)
     margin: auto
     width: 100vw 
     max-height: 60vh 
     position: absolute
     top: 55%
     left: 50%
-    overflow-x: hidden
-    overflow-y: auto
+    overflow: hidden
     transform: translate(-50%, -50%)
     padding-bottom: 1rem
-    croll-snap-type: y mandatory
-    scroll-behavior: smooth
-    scrollbar-width: none // Firefox
-    -ms-overflow-style: none
+    &::before 
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100% // or 60px if you want a narrow strip
+      height: 80% // or a smaller height like 60px for a subtle fade
+      pointer-events: none
+      z-index: 100
+      background: linear-gradient(to top, $secondary 0%, transparent 100%)
 
     &::-webkit-scrollbar
       display: none // Safari and Chrome
     @media screen and (max-width: 600px)
       max-width: 400px 
     .news-content-wrapper
+      position: relative
       padding-right: 5vh
       padding-left: 5vh
       width: 100%
@@ -177,7 +189,11 @@
       display: flex
       flex-direction: column 
       gap: 2vh
+      overflow: hidden
       .news-wrapper
+        transform-origin: center
+        will-change: transform
+        transition: transform 0.3s ease
         cursor: pointer
         background-color: $background
         width: 100%
@@ -186,6 +202,8 @@
         display: flex
         overflow: hidden
         border-radius: 8px
+        will-change: transform
+        transition: transform 0.3s ease
         @media screen and (max-width: 600px)
           height: 80px
         &:hover
@@ -231,6 +249,8 @@
     left: 50%
     transform: translateX(-50%) // centers it horizontally
     z-index: 5
+    will-change: transform
+    transition: transform 0.3s ease
     &:hover
       transform: scale(1.1) translateX(-50%)
     .int-arrow
@@ -341,6 +361,8 @@
         box-shadow: 0 4px 12px rgba($primary, 0.2)
         overflow: hidden
         background-color: $background
+        will-change: transform
+        transition: transform 0.3s ease
         &:hover
           transform: scale(1.05)
         .content-box-text
@@ -394,6 +416,8 @@
             font-weight: bold
             text-decoration: none
             transform-origin: center
+            will-change: transform
+            transition: transform 0.3s ease
             &:hover
               transform: scale(1.1)
         

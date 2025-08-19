@@ -30,6 +30,8 @@ nav.nav-wrap
   a.nav-logo
     height: 50px
     fill: $white
+    will-change: transform
+    transition: transform 0.3s ease
     svg
       height: 100%
       width: auto
@@ -52,7 +54,8 @@ nav.nav-wrap
         color: $white
         transition: all 0.15s ease-in
         font-size: 1em
-        trans
+        will-change: transform
+        transition: transform 0.3s ease
       a:hover
         transform: scale(1.1) 
     li:last-of-type

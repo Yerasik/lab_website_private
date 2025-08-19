@@ -98,6 +98,8 @@
           box-shadow: 0 4px 12px rgba($primary, 0.2)
           overflow: hidden
           background-color: $background
+          will-change: transform
+          transition: transform 0.3s ease
           &:hover
             transform: scale(1.05)
           .overlay
@@ -198,6 +200,8 @@
             display: flex
             align-items: center
             color: $primary
+            will-change: transform
+            transition: transform 0.3s ease
             @media screen and (max-width: 1200px)
               justify-content: flex-start
               flex-direction: row-reverse
@@ -252,6 +256,8 @@
       border-radius: 10px
       box-shadow: 0 4px 12px rgba($primary, 0.2)
       background: adjust-color($secondary, $lightness: 25%)
+      will-change: transform
+      transition: transform 0.3s ease
       @media screen and (max-width: 1200px)
         width: 90%
       &:hover
@@ -283,7 +289,8 @@
         background-color: lighten($black, 90%)
         color: $black
         cursor: pointer
-        transition: 0.3s ease
+        will-change: transform
+        transition: transform 0.3s ease
       button:hover
         transform: scale(1.05)
 

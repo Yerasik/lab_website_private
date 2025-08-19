@@ -319,6 +319,8 @@ nav.nav-wrap {
 nav.nav-wrap a.nav-logo {
   height: 50px;
   fill: #FFFFFF;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 nav.nav-wrap a.nav-logo svg {
   height: 100%;
@@ -347,6 +349,8 @@ nav.nav-wrap ul.navigation li a {
   color: #FFFFFF;
   transition: all 0.15s ease-in;
   font-size: 1em;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 nav.nav-wrap ul.navigation li a:hover {
   transform: scale(1.1);
@@ -570,6 +574,8 @@ html.nav-open .toggled-nav-wrapper {
   color: rgb(255, 255, 255);
   transition: all 0.15s ease-in;
   font-size: 1em;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .lab-footer .footer-right a:hover {
   transform: scale(1.1);
@@ -646,6 +652,8 @@ html.nav-open .toggled-nav-wrapper {
   font-weight: 500;
   line-height: 1.2em;
   padding: 0 10px 5px 10px;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-1 .slider .slide .slide-text h1 a {
   text-decoration: none;
@@ -657,7 +665,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-1 .slider .slide .slide-text p {
   font-size: clamp(0.75rem, 3vw, 1.25rem);
   font-weight: 300;
-  color: rgb(0, 0, 0);
+  color: #FFFFFF;
   line-height: 1.2em;
 }
 .container-1 .arrow {
@@ -671,6 +679,8 @@ html.nav-open .toggled-nav-wrapper {
   cursor: pointer;
   z-index: 10;
   transform-origin: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-1 .arrow.left-arrow {
   left: 1vw;
@@ -694,6 +704,8 @@ html.nav-open .toggled-nav-wrapper {
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-1 .int-arrows-body:hover {
   transform: scale(1.1) translateX(-50%);
@@ -746,22 +758,26 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-news .scroller-news {
-  -webkit-mask: linear-gradient(0deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
-  mask: linear-gradient(0deg, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
   margin: auto;
   width: 100vw;
   max-height: 60vh;
   position: absolute;
   top: 55%;
   left: 50%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   transform: translate(-50%, -50%);
   padding-bottom: 1rem;
-  croll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+}
+.container-news .scroller-news::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  pointer-events: none;
+  z-index: 100;
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%);
 }
 .container-news .scroller-news::-webkit-scrollbar {
   display: none;
@@ -772,6 +788,7 @@ html.nav-open .toggled-nav-wrapper {
   }
 }
 .container-news .scroller-news .news-content-wrapper {
+  position: relative;
   padding-right: 5vh;
   padding-left: 5vh;
   width: 100%;
@@ -779,8 +796,12 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2vh;
+  overflow: hidden;
 }
 .container-news .scroller-news .news-content-wrapper .news-wrapper {
+  transform-origin: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
   cursor: pointer;
   background-color: rgb(225, 225, 225);
   width: 100%;
@@ -789,6 +810,8 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   overflow: hidden;
   border-radius: 8px;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 @media screen and (max-width: 600px) {
   .container-news .scroller-news .news-content-wrapper .news-wrapper {
@@ -847,6 +870,8 @@ html.nav-open .toggled-nav-wrapper {
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-news .int-arrows-body:hover {
   transform: scale(1.1) translateX(-50%);
@@ -971,6 +996,8 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   background-color: rgb(225, 225, 225);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-3 .scroller .publications-content-wrapper .content-box:hover {
   transform: scale(1.05);
@@ -1029,6 +1056,8 @@ html.nav-open .toggled-nav-wrapper {
   font-weight: bold;
   text-decoration: none;
   transform-origin: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-3 .scroller .publications-content-wrapper .content-box .read-more a:hover {
   transform: scale(1.1);
@@ -1087,6 +1116,8 @@ html.nav-open .toggled-nav-wrapper {
   background: rgb(225, 225, 225);
   justify-content: center;
   align-self: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 @media screen and (max-width: 600px) {
   .container-team .member-content-wrapper .first-content-box {
@@ -1178,6 +1209,8 @@ html.nav-open .toggled-nav-wrapper {
   color: #517AF4;
   font-weight: 500;
   text-decoration: none;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-team .member-content-wrapper .first-content-box .content-box-text .email a:hover {
   transform: scale(1.1);
@@ -1194,6 +1227,8 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   background: rgb(225, 225, 225);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-team .member-content-wrapper .content-box:hover {
   transform: scale(1.05);
@@ -1250,6 +1285,8 @@ html.nav-open .toggled-nav-wrapper {
   color: #517AF4;
   font-weight: 500;
   text-decoration: none;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-team .member-content-wrapper .content-box .email a:hover {
   transform: scale(1.1);
@@ -1333,6 +1370,8 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   display: flex;
   overflow: hidden;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-publications .publications-content-wrapper .publication-wrapper:hover {
   transform: scale(1.05);
@@ -1366,6 +1405,8 @@ html.nav-open .toggled-nav-wrapper {
   font-weight: 500;
   text-decoration: none;
   transform-origin: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url a:hover {
   transform: scale(1.1);
@@ -1522,6 +1563,8 @@ html.nav-open .toggled-nav-wrapper {
   overflow: hidden;
   background: rgb(225, 225, 225);
   z-index: 4;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-projects .projects-wrapper .projects-block:hover {
   transform: scale(1.05);
@@ -1613,6 +1656,8 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   display: flex;
   overflow: hidden;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-news-original .news-content-wrapper .post-wrapper:hover {
   transform: scale(1.05);
@@ -1646,6 +1691,8 @@ html.nav-open .toggled-nav-wrapper {
   font-weight: 500;
   text-decoration: none;
   transform-origin: center;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-news-original .news-content-wrapper .post-wrapper .text-wrapper .number-and-url a:hover {
   transform: scale(1.1);
@@ -1819,6 +1866,8 @@ html.nav-open .toggled-nav-wrapper {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   background-color: rgb(225, 225, 225);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-contact-us .vacancies-wrapper .scroller .vacancy-content-wrapper .content-box:hover {
   transform: scale(1.05);
@@ -1951,6 +2000,8 @@ html.nav-open .toggled-nav-wrapper {
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 @media screen and (max-width: 1200px) {
   .container-contact-us .address-links-map .address-and-links .links-holder .links-wrapper a {
@@ -2016,6 +2067,8 @@ html.nav-open .toggled-nav-wrapper {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   background: rgb(63.75, 63.75, 63.75);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 @media screen and (max-width: 1200px) {
   .container-contact-us .form-holder .form {
@@ -2056,7 +2109,8 @@ html.nav-open .toggled-nav-wrapper {
   background-color: rgb(229.5, 229.5, 229.5);
   color: #000000;
   cursor: pointer;
-  transition: 0.3s ease;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .container-contact-us .form-holder .form button:hover {
   transform: scale(1.05);
@@ -2140,6 +2194,8 @@ html.nav-open .toggled-nav-wrapper {
 .publication-page a {
   display: inline-block;
   color: #517AF4;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .publication-page a:hover {
   transform: scale(1.1);
@@ -2195,6 +2251,8 @@ html.nav-open .toggled-nav-wrapper {
 .project-page a {
   display: inline-block;
   color: #517AF4;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 .project-page a:hover {
   transform: scale(1.1);
