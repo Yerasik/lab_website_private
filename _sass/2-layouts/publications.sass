@@ -11,58 +11,86 @@
     width: 100% // ensures it stretches across the container
   @media screen and (max-width: 600px)
       padding: 5vh 0 0 0
-  
-  .header-and-search
+  .tag-header
     position: relative
     display: flex
-    flex-direction: row
-    margin-top: 18vh
-    margin-bottom: 2vh
-    @media screen and (max-width: 600px)
-      margin-top: 12vh
-      flex-direction: column
-    .header
-      position: absolute
-      width: 100%
-      color: $primary
-      text-align: center
-      @media screen and (max-width: 600px)
-        position: relative
-        width: 100%
-        text-align: center
-  
-
-    .search-wrapper 
-      width: 20%
-      left: 0
+    flex-direction: column
+    p
+      margin: auto
+      padding: 2vh
+    .tag-holder
+      margin: auto
+      width: 60%
+      padding-bottom: 2vh
       position: relative
-      margin-left: auto
       display: flex
-      justify-content: flex-end
-      @media screen and (max-width: 600px) 
-
+      flex-direction: row
+      flex-wrap: wrap
+      bottom: 0
+      @media screen and (max-width: 600px)
         width: 100%
-        margin-top: 2vh
-        margin-bottom: 4vh
+      .tag
+        margin: 2px
+        p
+          display: inline-block
+          padding: 0.3vh 0.7vw
+          border: 1px solid adjust-color($primary, $lightness: -40%)
+          border-radius: clamp(2px, 2vh, 6px)
+          color: $primary
+          font-size: clamp(0.5rem, 2vw, 0.85rem)
+          white-space: nowrap
+          margin: 0
+    .header-and-search
+      position: relative
+      display: flex
+      flex-direction: row
+      margin-top: 18vh
+      margin-bottom: 2vh
+      @media screen and (max-width: 600px)
+        margin-top: 12vh
+        flex-direction: column
+      .header
+        position: absolute
+        width: 100%
+        color: $primary
+        text-align: center
+        @media screen and (max-width: 600px)
+          position: relative
+          width: 100%
+          text-align: center
     
 
-    input 
-      width: 100%
-      height: 30px
-      font-size: 1rem
-      padding: 0 1rem
-      border: none
-      border-radius: 8px
-      background-color: $background
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
-      transition: box-shadow 0.2s ease
-      &:focus 
-        outline: none
-        box-shadow: 0 0 0 3px rgba($primary, 0.3)
+      .search-wrapper 
+        width: 20%
+        left: 0
+        position: relative
+        margin-left: auto
+        display: flex
+        justify-content: flex-end
+        @media screen and (max-width: 600px) 
 
-      @media screen and (max-width: 600px) 
-        margin-top: 2vh
-        margin-bottom: 4vh
+          width: 100%
+          margin-top: 2vh
+          margin-bottom: 4vh
+      
+
+      input 
+        width: 100%
+        height: 30px
+        font-size: 1rem
+        padding: 0 1rem
+        border: none
+        border-radius: 8px
+        background-color: $background
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+        transition: box-shadow 0.2s ease
+        &:focus 
+          outline: none
+          box-shadow: 0 0 0 3px rgba($primary, 0.3)
+
+        @media screen and (max-width: 600px) 
+          margin-top: 2vh
+          margin-bottom: 4vh
 
   .publications-content-wrapper
     flex-wrap: wrap

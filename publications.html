@@ -5,14 +5,38 @@ layout: default
 {% include nav.html %}
 <!-- first container -->
 <div class="container-publications">
-  <div class="header-and-search">
-    <h1 class="header">Publications</h1>
+  <did class="tag-header">
+    <div class="header-and-search">
+      <h1 class="header">Publications</h1>
 
-    <div class="search-wrapper">
-      <i class="search-icon fas fa-search"></i>
-      <input type="search-input" id="search" placeholder="Filter">
+      <div class="search-wrapper">
+        <i class="search-icon fas fa-search"></i>
+        <input type="search-input" id="search" placeholder="Filter">
+      </div>
     </div>
-  </div>
+    <p>all tags:</p>
+    <div class="tag-holder">
+      <!-- all tags here -->
+      <div class="tag"><p>motor-synergies</p></div>
+      <div class="tag"><p>cognitive-robotics</p></div>
+      <div class="tag"><p>control</p></div>
+      <div class="tag"><p>causal-learning</p></div>
+      <div class="tag"><p>episodic-memory</p></div>
+      <div class="tag"><p>word-learning</p></div>
+      <div class="tag"><p>variation</p></div>
+      <div class="tag"><p>attention</p></div>
+      <div class="tag"><p>exploration</p></div>
+      <div class="tag"><p>neural-model</p></div>
+      <div class="tag"><p>knowledge-graphs</p></div>
+      <div class="tag"><p>bert</p></div>
+      <div class="tag"><p>similarity</p></div>
+      <div class="tag"><p>drug-discovery</p></div>
+      <div class="tag"><p>spectral-gradient</p></div>
+      <div class="tag"><p>complexity</p></div>
+      <div class="tag"><p>completion</p></div>
+    </div>
+  </did>
+  
   <hr>
   <div class="publications-content-wrapper" >
     {% assign sorted_publications = site.data.publications | sort: "number" | reverse %}
