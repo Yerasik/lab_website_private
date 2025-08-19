@@ -931,7 +931,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-3 .scroller[data-animated=true] .publications-content-wrapper {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 120s) var(--_animation-direction, forwards) linear infinite;
 }
 .container-3 .scroller[data-direction=right] {
   --_animation-direction: reverse;
@@ -1019,9 +1019,17 @@ html.nav-open .toggled-nav-wrapper {
 .container-3 .scroller .publications-content-wrapper .content-box .content-box-text h1 {
   color: #000000;
   margin: 0;
+  height: 3.6em;
   text-align: left;
   line-height: 1.2em;
   padding-bottom: 20px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .container-3 .scroller .publications-content-wrapper .content-box .content-box-text p {
   padding-top: 20px;
