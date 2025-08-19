@@ -3,8 +3,15 @@
   padding: 5vh
   background: $secondary
   overflow: hidden
+  hr
+    border: none // removes default border
+    height: 1px // sets thickness
+    background-color: $background // uses your theme color
+    margin: 2px 0 // adds spacing above and below
+    width: 100% // ensures it stretches across the container
   @media screen and (max-width: 600px)
       padding: 5vh 0 0 0
+  
   .header
     margin-top: 18vh
     margin-bottom: 2vh
@@ -12,6 +19,8 @@
     text-align: center
     @media screen and (max-width: 600px)
       margin-top: 12vh
+  
+
   .search-wrapper 
     width: 20%
     position: relative

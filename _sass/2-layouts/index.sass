@@ -69,6 +69,7 @@
         p
           font-size: clamp(0.75rem, 3vw, 1.25rem)
           font-weight: 300
+          color: $secondary
           line-height: 1.2em
 
 
@@ -180,7 +181,7 @@
         cursor: pointer
         background-color: $background
         width: 100%
-        height: 110px
+        height: 120px
         box-shadow: 0 4px 12px rgba($primary, 0.2)
         display: flex
         overflow: hidden
@@ -199,7 +200,7 @@
           .date
             padding-bottom: 1vh
             p
-              color: $secondary
+              color: $black
           p
             color: adjust-color($secondary, $lightness: 40%)
             font-size: clamp(0.75rem, 2vw, 1rem)
@@ -211,12 +212,13 @@
             -webkit-line-clamp: 2
             -webkit-box-orient: vertical
             overflow: hidden
+            color: $black
             @media screen and (max-width: 600px)
               -webkit-line-clamp: 1
           hr
             border: none // removes default border
             height: 1px // sets thickness
-            background-color: $secondary // uses your theme color
+            background-color: $black // uses your theme color
             margin: 2px 0 // adds spacing above and below
             width: 100% // ensures it stretches across the container
   .int-arrows-body
@@ -236,8 +238,8 @@
       position: relative
       width: 1.5em
       height: 1.5em
-      border-top: 0.5em solid $white
-      border-left: 0.5em solid $white
+      border-top: 0.5em solid $primary
+      border-left: 0.5em solid $primary
       transform: rotate(-135deg)
       animation: arrow-load 2s infinite
     .int-arrow:nth-child(1)

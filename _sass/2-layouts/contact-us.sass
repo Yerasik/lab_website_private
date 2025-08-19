@@ -48,6 +48,7 @@
       z-index: 3
       padding: 2vh
       font-size: clamp(2rem, 5vw, 3.125rem)
+      color: $white
   .vacancies-wrapper
     height: 100vh
     position: relative
@@ -205,7 +206,7 @@
             p
               font-size: clamp(0.75rem, 3vw, 1.25rem)
               font-weight: 600
-      .external-link-icon
+      .external-link-icons
         margin-right: 2vh
         justify-content: center
         align-items: center
@@ -229,7 +230,8 @@
         svg#Layer_3 
           height: 5vh
           width: 5vh
-          color: $primary
+          --youtube-shade-1: #{$primary}
+          --youtube-shade-2: #{$secondary}
             
         @media screen and (max-width: 1200px)
           margin-left: 2vh

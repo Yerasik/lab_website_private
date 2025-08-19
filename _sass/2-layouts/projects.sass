@@ -2,6 +2,12 @@
   position: relative
   padding: 5vh
   background: $secondary
+  hr
+    border: none // removes default border
+    height: 1px // sets thickness
+    background-color: $background // uses your theme color
+    margin: 2px 0 // adds spacing above and below
+    width: 100% // ensures it stretches across the container
   .header-and-search
     display: flex
     flex-direction: row
@@ -77,6 +83,7 @@
       border-radius: 1vh
       overflow: hidden
       background: $background
+      z-index: 4
       &:hover
         transform: scale(1.05)
       img
