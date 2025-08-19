@@ -14,27 +14,19 @@ layout: default
         <input type="search-input" id="search" placeholder="Filter">
       </div>
     </div>
-    <p>all tags:</p>
+    {% assign all_tags = "" | split: "" %}
+    {% for pub in site.data.publications %}
+      {% assign all_tags = all_tags | concat: pub.tags %}
+    {% endfor %}
+    {% assign unique_tags = all_tags | uniq | sort %}
+
+    <p>All tags:</p>
     <div class="tag-holder">
-      <!-- all tags here -->
-      <div class="tag"><p>motor-synergies</p></div>
-      <div class="tag"><p>cognitive-robotics</p></div>
-      <div class="tag"><p>control</p></div>
-      <div class="tag"><p>causal-learning</p></div>
-      <div class="tag"><p>episodic-memory</p></div>
-      <div class="tag"><p>word-learning</p></div>
-      <div class="tag"><p>variation</p></div>
-      <div class="tag"><p>attention</p></div>
-      <div class="tag"><p>exploration</p></div>
-      <div class="tag"><p>neural-model</p></div>
-      <div class="tag"><p>knowledge-graphs</p></div>
-      <div class="tag"><p>bert</p></div>
-      <div class="tag"><p>similarity</p></div>
-      <div class="tag"><p>drug-discovery</p></div>
-      <div class="tag"><p>spectral-gradient</p></div>
-      <div class="tag"><p>complexity</p></div>
-      <div class="tag"><p>completion</p></div>
-    </div>
+      {% for tag in unique_tags %}
+        <div class="tag"><p>{{ tag }}</p></div>
+      {% endfor %}
+</div>
+   
   </did>
   
   <hr>
@@ -77,7 +69,44 @@ layout: default
  
 {% include footer.html %}
 
+<!-- for tag colors -->
+<script>
+  // Generate a consistent HSL color from a string
+  function stringToColor(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return `hsl(${hash % 360}, 70%, 70%)`;
+  }
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Collect all tag elements across the page
+    const allTagElements = document.querySelectorAll(".tag-holder .tag, .tag-wrapper .tag");
+
+    // Map to store tag name → color
+    const tagColorMap = {};
+
+    // First pass: assign colors and store them
+    allTagElements.forEach(tagEl => {
+      const tagText = tagEl.textContent.trim();
+      if (!tagColorMap[tagText]) {
+        tagColorMap[tagText] = stringToColor(tagText);
+      }
+    });
+
+    // Second pass: apply colors consistently
+    allTagElements.forEach(tagEl => {
+      const tagText = tagEl.textContent.trim();
+      const color = tagColorMap[tagText];
+      tagEl.style.backgroundColor = color;
+      tagEl.style.color = "#fff";
+    });
+  });
+</script>
+
+
+<!-- for clickability of publication wrapper-->
 <script>
 
 document.querySelectorAll('.publication-wrapper').forEach(el => {

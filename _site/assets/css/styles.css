@@ -1336,13 +1336,12 @@ html.nav-open .toggled-nav-wrapper {
 }
 .container-publications .tag-header .tag-holder .tag {
   margin: 2px;
+  overflow: hidden;
 }
 .container-publications .tag-header .tag-holder .tag p {
   display: inline-block;
   padding: 0.3vh 0.7vw;
-  border: 1px solid #999999;
-  border-radius: clamp(2px, 2vh, 6px);
-  color: rgb(255, 255, 255);
+  color: #000000;
   font-size: clamp(0.5rem, 2vw, 0.85rem);
   white-space: nowrap;
   margin: 0;
@@ -1475,9 +1474,7 @@ html.nav-open .toggled-nav-wrapper {
 .container-publications .publications-content-wrapper .publication-wrapper .text-wrapper .number-and-url .tag-wrapper .tag p {
   display: inline-block;
   padding: 0.3vh 0.7vw;
-  border: 1px solid #999999;
-  border-radius: clamp(2px, 2vh, 6px);
-  color: rgb(255, 255, 255);
+  color: #000000;
   font-size: clamp(0.5rem, 2vw, 0.85rem);
   white-space: nowrap;
   margin: 0;
