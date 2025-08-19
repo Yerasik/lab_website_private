@@ -5,14 +5,18 @@ layout: default
 {% include nav.html %}
 <!-- first container -->
 <div class="container-publications">
-  <h1 class="header">Publications</h1>
-  <hr>
+  <div class="header-and-search">
+    <h1 class="header">Publications</h1>
 
-  <div class="search-wrapper">
-    <input type="search-input" id="search" placeholder="Filter">
+    <div class="search-wrapper">
+      <i class="search-icon fas fa-search"></i>
+      <input type="search-input" id="search" placeholder="Filter">
+    </div>
   </div>
+  <hr>
   <div class="publications-content-wrapper" >
-    {% for publication in site.data.publications %}
+    {% assign sorted_publications = site.data.publications | sort: "number" | reverse %}
+    {% for publication in sorted_publications %}
       <div class="publication" data-tags="{{ publication.tags | join: ',' }}">
         <div class="publication-wrapper" id="{{ publication.reference | remove: '#' }}" data-href="../{{publication.origin}}">
           <div class="text-wrapper">
@@ -29,6 +33,7 @@ layout: default
             
             </div>
             <div class="information">
+              
               <h1>{{publication.title}}</h1>
               <p>{{publication.authors}}</p>
               <p class="journal">{{publication.journal}}</p>

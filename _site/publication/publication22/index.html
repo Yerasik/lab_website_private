@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The UBD Ajaz Ahmad Bhat's lab is a multidisciplinary research hub focused on exploring the frontiers of artificial intelligence through the lens of human cognition and behavior. We build autonomous systems that think, reason, and adapt in ways that mirror—and often surpass—human intelligence.">
 <title>Laboratory</title>
-<link rel="canonical" href="http://localhost:4000/publication/publication4/">
+<link rel="canonical" href="http://localhost:4000/publication/publication22/">
 <link rel="icon" type="image/x-icon" href="/lab_website_private/favicon.ico">
 <link rel="shortcut icon" type="image/x-icon" href="/lab_website_private/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/lab_website_private/assets/css/styles.css">
@@ -74,22 +74,24 @@
 
 
 <div class="publication-page">
-  <h1 class="header">From Object-Action to Property-Action: Learning Causally Dominant Properties through Cumulative Explorative Interactions</h1>
+  <h1 class="header">MuCo-KGC: Multi-Context-Aware Knowledge Graph Completion</h1>
   <hr>
-  <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg" alt="From Object-Action to Property-Action: Learning Causally Dominant Properties through Cumulative Explorative Interactions">
-  <p><strong>Authors:</strong> Mohan V., Bhat A. A., Morasso P., & Sandini G.</p>
-  <p><strong>Journal:</strong> Biologically Inspired Cognitive Architectures</p>
-  <p><strong>Tags:</strong> causal-learning, robotics</p>
+  <img src="https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg" alt="MuCo-KGC: Multi-Context-Aware Knowledge Graph Completion">
+  <p><strong>Authors:</strong> Gul H., Naim A. G., & Bhat A. A.</p>
+  <p><strong>Journal:</strong> arXiv preprint / PAKDD DSFA Special Session</p>
+  <p><strong>Tags:</strong> knowledge-graphs, completion</p>
   <p><strong>Link:</strong> <a href="">URL</a></p>
   <h1>Abstract:</h1> 
   <hr>
-  <p>We explore how robots can discover which object properties drive task outcomes by cumulatively interacting with objects varying along multiple dimensions. Through a dynamic neural field model, robots infer causally dominant properties from exploration data without supervision.</p>
+  <p>Knowledge graph completion (KGC) aims to predict missing entities or relations in incomplete graphs. Traditional embedding-based methods struggle with unseen entities and require negative sampling, while textual models incur high computational costs. We propose MuCo-KGC, a Multi-Context-Aware framework that leverages structural contexts from k-hop neighbor subgraphs around the head entity and query relation. MuCo-KGC eliminates the need for entity descriptions and negative sampling, significantly reducing computational overhead. Experiments on FB15k-237, WN18RR, CoDEx-S, and CoDEx-M demonstrate that MuCo-KGC outperforms state-of-the-art baselines, improving MRR by 1.63% on WN18RR, 3.77% on CoDEx-S, and 20.15% on CoDEx-M.
+</p>
   <h1>Methodology:</h1> 
   <hr>
-  <p>A dynamic field theory-based architecture tracks instantaneous perceptual activations and integrates them across trials. Simulations and real‐robot trials show that the system correctly identifies weight or shape as the critical dimension for floating tasks.</p>
+  <p>MuCo-KGC samples fixed-size k-hop neighbor subgraphs to extract head context (neighbor entities) and relation context (adjacent relation sequences). These contexts are formatted into BERT-style input sequences and concatenated before being fine-tuned with cross-entropy loss to predict tail entities without negative sampling. The model is evaluated against TransE, ComplEx, and KG-BERT baselines using MRR and Hits@k metrics on FB15k-237, WN18RR, CoDEx-S, and CoDEx-M.
+</p>
   <h1>Acknowledgements :</h1> 
   <hr>
-  <p>blank</p>
+  <p>No acknowledgements provided</p>
 </div>
 
 <footer class="lab-footer">
