@@ -31,7 +31,15 @@ layout: default
   
   <hr>
   <div class="publications-content-wrapper" >
-    {% assign sorted_publications = site.data.publications | sort: "number" | reverse %}
+    {% assign publications_with_numbers = "" | split: "" %}
+{% for pub in site.data.publications %}
+  {% assign pub_number = pub.number | plus: 0 %}
+  {% assign new_pub = pub | merge: { "number": pub_number } %}
+  {% assign publications_with_numbers = publications_with_numbers | push: new_pub %}
+{% endfor %}
+
+{% assign sorted_publications = publications_with_numbers | sort: "number" | reverse %}
+
     {% for publication in sorted_publications %}
       <div class="publication" data-tags="{{ publication.tags | join: ',' }}">
         <div class="publication-wrapper" id="{{ publication.reference | remove: '#' }}" data-href="../{{publication.origin}}">
