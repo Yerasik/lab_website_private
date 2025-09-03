@@ -3,7 +3,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Learning with a network of Competing Synapses"
   reference: "#some-publication-1"
-  number: "1"
+  number: 1
   tags: ["synapses","learning"]
   authors: "Bhat A. A., Mahajan G., & Mehta A."
   journal: "PLoS ONE"
@@ -16,7 +16,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Dynamics of Competitive Learning: The Role of Updates and Memory"
   reference: "#some-publication-2"
-  number: "2"
+  number: 2
   tags: ["competition","plasticity"]
   authors: "Bhat A. A. & Mehta A."
   journal: "Physical Review E"
@@ -29,7 +29,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "“Connecting Experiences”: Towards a Biologically Inspired Episodic Memory for Developmental Robots"
   reference: "#some-publication-3"
-  number: "3"
+  number: 3
   tags: ["episodic-memory","robotics"]
   authors: "Bhat A. A., Mohan V., Rea F., Morasso P., & Sandini G."
   journal: "IEEE ICDL-EPIROB 2014"
@@ -42,7 +42,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "From Object-Action to Property-Action: Learning Causally Dominant Properties through Cumulative Explorative Interactions"
   reference: "#some-publication-4"
-  number: "4"
+  number: 4
   tags: ["causal-learning","robotics"]
   authors: "Mohan V., Bhat A. A., Morasso P., & Sandini G."
   journal: "Biologically Inspired Cognitive Architectures"
@@ -55,7 +55,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "How iCub Learns to Imitate Use of a Tool Quickly by Recycling the Past Knowledge Learnt During Drawing"
   reference: "#some-publication-5"
-  number: "5"
+  number: 5
   tags: ["imitation","tool-use"]
   authors: "Bhat A. A. & Mohan V."
   journal: "Biomimetic and Biohybrid Systems"
@@ -68,7 +68,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Humanoid Robot Infers Archimedes' Principle: From Cumulative Exploration to Abstraction of Underlying Physical Relations and Object Affordances"
   reference: "#some-publication-6"
-  number: "6"
+  number: 6
   tags: ["affordances","cognitive-robotics"]
   authors: "Bhat A. A., Mohan V., Sandini G., & Morasso P."
   journal: "Journal of the Royal Society Interface"
@@ -81,7 +81,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Towards a Learnt Neural Body Schema for Dexterous Coordination of Action in Humanoid and Industrial Robots"
   reference: "#some-publication-7"
-  number: "7"
+  number: 7
   tags: ["body-schema","coordination"]
   authors: "Bhat A. A., Mohan V., Akkaladevi S. C., Eitzinger C., Sandini G., & Morasso P."
   journal: "Autonomous Robots"
@@ -94,7 +94,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "A Dynamic Neural Field Model of Memory, Attention and Cross-Situational Word Learning"
   reference: "#some-publication-8"
-  number: "8"
+  number: 8
   tags: ["word-learning","attention"]
   authors: "Bhat A. A., Spencer J. P., & Samuelson L. K."
   journal: "Proceedings CogSci 2018"
@@ -107,7 +107,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Joint Goal Human-Robot Collaboration—From Remembering to Inferring"
   reference: "#some-publication-9"
-  number: "9"
+  number: 9
   tags: ["collaboration","planning"]
   authors: "Mohan V. & Bhat A. A."
   journal: "Procedia Computer Science"
@@ -120,7 +120,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Goal-Directed Reasoning and Cooperation in Robots in Shared Workspaces: An Internal Simulation-Based Neural Framework"
   reference: "#some-publication-10"
-  number: "10"
+  number: 10
   tags: ["planning","simulation"]
   authors: "Bhat A. A. & Mohan V."
   journal: "Cognitive Computation"
@@ -133,7 +133,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Muscle-less motor synergies and actions without movements. From motor neuroscience to cognitive robotics"
   reference: "#some-publication-11"
-  number: "11"
+  number: 11
   tags: ["motor-synergies","cognitive-robotics"]
   authors: "Mohan V., Bhat A. A., & Morasso P."
   journal: "Physics of Life Reviews"
@@ -148,7 +148,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "The complementarity of ‘Muscleless’ motor synergies with motor control strategies in humans and robots: Reply to Comments"
   reference: "#some-publication-12"
-  number: "12"
+  number: 12
   tags: ["motor-synergies","control"]
   authors: "Mohan V., Morasso P., & Bhat A. A."
   journal: "Physics of Life Reviews"
@@ -163,7 +163,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Causal Learning by a Robot with Semantic-Episodic Memory in an Aesop's Fable Experiment"
   reference: "#some-publication-13"
-  number: "13"
+  number: 13
   tags: ["causal-learning","episodic-memory"]
   authors: "Bhat A. A. & Mohan V."
   journal: "ICLR (arXiv)"
@@ -178,7 +178,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Effect of Metric Variation in Object Shapes and Colours on Cross-Situational Word Learning in Adults"
   reference: "#some-publication-14"
-  number: "14"
+  number: 14
   tags: ["word-learning","variation"]
   authors: "Bhat A. A., Spencer J. P., & Samuelson L. K."
   journal: "OSF Pre-registry"
@@ -193,7 +193,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Moving beyond Associative Learning and Hypothesis Testing: How Stimulus Exposure Times and Looking Behaviours Conspire in Cross-Situational Word Learning"
   reference: "#some-publication-15"
-  number: "15"
+  number: 15
   tags: ["word-learning","attention"]
   authors: "Bhat A. A., Spencer J. P., & Samuelson L. K."
   journal: "OSF Pre-registry"
@@ -208,7 +208,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Word-Object Learning via Visual Exploration in Space (WOLVES): A Neural Process Account of Cross-Situational Word Learning"
   reference: "#some-publication-16"
-  number: "16"
+  number: 16
   tags: ["word-learning","exploration"]
   authors: "Bhat A. A., Spencer J. P., & Samuelson L. K."
   journal: "Psychological Review"
@@ -223,7 +223,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Formal theories clarify the complex: Generalizing a neural process account of the interaction of visual exploration and word learning in infancy"
   reference: "#some-publication-17"
-  number: "17"
+  number: 17
   tags: ["word-learning","neural-model"]
   authors: "Bhat A. A., Samuelson L. K., & Spencer J. P."
   journal: "Child Development"
@@ -239,7 +239,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "A Contextualized BERT model for Knowledge Graph Completion"
   reference: "#some-publication-18"
-  number: "18"
+  number: 18
   tags: ["knowledge-graphs","bert"]
   authors: "Gul H. & Bhat A. A."
   journal: "NeurIPS Workshop (to appear)"
@@ -254,7 +254,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Similarity in object properties supports cross-situational word learning: Predictions from a dynamic neural model confirmed"
   reference: "#some-publication-19"
-  number: "19"
+  number: 19
   tags: ["word-learning","similarity"]
   authors: "Bhat A. A., Spencer J. P., & Samuelson L. K."
   journal: "CogSci Proceedings"
@@ -269,7 +269,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "MuCoS: Efficient Drug–Target Discovery via Multi-Context-Aware Sampling in Knowledge Graphs"
   reference: "#some-publication-20"
-  number: "20"
+  number: 20
   tags: ["drug-discovery","knowledge-graphs"]
   authors: "Gul H., Naim A. G., & Bhat A. A."
   journal: "ACL BioNLP Workshop, NeurIPS 2025"
@@ -284,7 +284,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "Evaluating Cumulative Spectral Gradient as a Complexity Measure"
   reference: "#some-publication-21"
-  number: "21"
+  number: 21
   tags: ["spectral-gradient","complexity"]
   authors: "Gul H., Naim A. G., & Bhat A. A."
   journal: "ICML Workshop Proceedings (PMLR 267, 2025)"
@@ -299,7 +299,7 @@
 - image: https://images.pexels.com/photos/17808485/pexels-photo-17808485.jpeg
   title: "MuCo-KGC: Multi-Context-Aware Knowledge Graph Completion"
   reference: "#some-publication-22"
-  number: "22"
+  number: 22
   tags: ["knowledge-graphs","completion"]
   authors: "Gul H., Naim A. G., & Bhat A. A."
   journal: "arXiv preprint / PAKDD DSFA Special Session"
